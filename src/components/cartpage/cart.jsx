@@ -16,7 +16,8 @@ export function Cart(props) {
   const totalAmount = myNewArray.cart.reduce((total, item) => {
     return total + (item.newPrice * item.quantity);
   }, 0);
-  
+  props.setkey(totalAmount)
+  console.log("setrate is :",props.setkey)
   console.log("total amount is:", totalAmount);
   
   function dataDelete(data) {
@@ -71,6 +72,7 @@ export function Cart(props) {
                 }
                 
                 setQuantity(quantity - 1);
+                props.setkey(totalAmount)
               }
             }}
           >
@@ -79,12 +81,13 @@ export function Cart(props) {
           <button
             onClick={() => {
               let currentData = myNewArray.cart.find(item => item.newId === props.item.newId);
-
+              
               if (currentData) {
                   currentData.quantity = (quantity + 1);
               }
               
               setQuantity(quantity + 1)
+              props.setkey(totalAmount)
             }}
           >
             +

@@ -9,10 +9,10 @@ export function Navbar({onClickTab=()=>{}}){
                 <h3>EUROPIAN FASHION</h3>
             </div>
             <div className="switches">
-                <div className="home"><button onClick={()=>onClickTab('home')}><Link to="/home">HOME</Link></button></div>
-                <div className="products"><button onClick={()=>onClickTab('product')}><Link to="/product">PRODUCT</Link></button></div>
-                <div className="services"><button onClick={()=>onClickTab('cart')}><Link to="/cart">CART</Link></button></div>
-                <div className="about"><button onClick={()=>onClickTab('about')}><Link to="/about">ABOUT</Link></button></div>
+                <div className="home"><Link to="/home"><button onClick={()=>onClickTab('home')}>HOME</button></Link></div>
+                <div className="products"><Link to="/product"><button onClick={()=>onClickTab('product')}>PRODUCT</button></Link></div>
+                <div className="services"><Link to="/cart"><button onClick={()=>onClickTab('cart')}>CART</button></Link></div>
+                <div className="about"><Link to="/about"><button onClick={()=>onClickTab('about')}>ABOUT</button></Link></div>
             </div>
         </div>
     )

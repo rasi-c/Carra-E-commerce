@@ -5,6 +5,7 @@ import { Maincart } from "./components/cartpage/maincart";
 import { Content } from "./components/homepage/content";
 import { Navbar } from "./components/homepage/navbar";
 import { Mainproduct } from "./components/productpage/mainproduct";
+import { View } from "./components/productpage/view";
 
 export const MyContext = createContext();
 
@@ -61,17 +62,13 @@ function App() {
         <div className="container">
           <Navbar />
           <Routes>
-            <Route path="home" element={<Content />} />{" "}
-            {/* 👈 Renders at /app/ */}
-            <Route path="/product" element={<Mainproduct />} />{" "}
-            {/* 👈 Renders at /app/ */}
-            <Route path="cart" element={<Maincart />} />{" "}
-            {/* 👈 Renders at /app/ */}
-            <Route path="about" element={<Content />} />{" "}
-            {/* 👈 Renders at /app/ */}
-            <Route path="*" element={<Content />} /> {/* 👈 Renders at /app/ */}
+            <Route path="home" element={<Content />} />
+            <Route path="/product" element={<Mainproduct />} />
+            <Route path="cart" element={<Maincart />} />
+            <Route path="about" element={<Content />} />
+            <Route path="view/:cardId" element={<View />} />
+            <Route path="*" element={<Content />} /> 
           </Routes>
-          {/* {component} */}
         </div>
       </div>
     </MyContext.Provider>

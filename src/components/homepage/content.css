@@ -7,11 +7,12 @@
   flex-wrap: wrap;
   justify-content: center;
   overflow: hidden;
+  min-height: 100vh;
 }
 .leftBody {
   min-width: 330px;
   width: 50%;
-  /* padding-top: 60px; */
+  padding-top: 60px;
   position: relative;
   padding-left: 30px;
   padding-right: 30px;

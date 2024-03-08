@@ -1,7 +1,8 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { MyContext } from '../../App';
 import "./card.css";
-
+import { View } from './view';
+import { Link } from 'react-router-dom';
 
 export  function Card(props) {
   console.log("props is : ",props);
@@ -81,6 +82,7 @@ export  function Card(props) {
 <div className="main">
 <div className="card">
 <div className="card2">
+<Link to={`/view/${props.item.id}`}><button className='viewBtn' >view</button></Link>
 <svg className="glasses" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100px" height="100px" viewBox="0 0 100 100" xmlSpace="preserve">
     <image id="image0" width="100" height="100" x="0" y="0" href={Image}></image>
   </svg>
