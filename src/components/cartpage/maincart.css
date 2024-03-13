@@ -33,10 +33,19 @@
     font-style: normal;
     font-size: 1.5rem;
 }
-.buynowBtn {
+.buttons{
+  width: 100px;
+  row-gap: 7px;
+  display: flex;
+  flex-direction: column
+}
+.buynowBtn,.addAdress{
+  width: 100%;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-style: normal;
+  display: flex;
+  justify-content: center;
 }
 
 @media screen and (max-width:600px) {
@@ -49,10 +58,14 @@
   .amount{
     font-size: 1rem;
   }
-  .buynowBtn{
-    width: 60px;
-    font-size: 0.7rem;
+  .buttons{
+    width: 50px;
+  }
+  .buynowBtn,.addAdress{
+    width: 50px;
+    font-size: 0.6rem;
     height: 35px;
     line-height: 15px;
+    font-weight: 600;
   }
 }

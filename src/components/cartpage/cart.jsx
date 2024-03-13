@@ -27,6 +27,7 @@ export function Cart(props) {
     });
     myNewArray.arrkey(newcart);
     console.log(myNewArray.cart);
+    props.setkey(totalAmount)
   }
 
   return (

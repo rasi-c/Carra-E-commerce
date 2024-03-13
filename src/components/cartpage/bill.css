@@ -1,0 +1,46 @@
+.billContainer{
+    padding-top: 80px;
+    min-height: 100vh;
+    width: 100%;
+}
+.invoice {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    max-width: 80%;
+    margin: 0 auto;
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  .shop-info {
+    max-width: 50%;
+  }
+  .shop-logo {
+    max-width: 200px;
+    height: auto;
+  }
+  .invoice-details {
+    text-align: right;
+    max-width: 50%;
+  }
+  .customer-details {
+    margin-bottom: 40px;
+  }
+  .itemized-list {
+    margin-bottom: 20px;
+  }
+  .itemized-list th, .itemized-list td {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+  }
+  .total {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+    font-weight: bold;
+  }
