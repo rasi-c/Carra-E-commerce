@@ -20,7 +20,8 @@ function App() {
       value={{
         cart: array,
         arrkey: setarray,
-        cart1: secArray
+        cart1: secArray,
+        setSecArray: setSecArray
       }}
     >
       <div className="App">
@@ -34,6 +35,7 @@ function App() {
             <Route path="view/:cardId" element={<View />} />
             <Route path="cart/address" element={<Address />} />
             <Route path="cart/address/invoice" element={<Invoice />} />
+            <Route path="cart/bill"  element={<Invoice />} />
             <Route path="*" element={<Content />} /> 
           </Routes>
         </div>

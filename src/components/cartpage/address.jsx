@@ -1,9 +1,10 @@
 import React, { useContext, useState } from "react";
-import "./address.css"
+import { useNavigate } from "react-router-dom";
 import { MyContext } from "../../App";
-import { Link, useNavigate } from "react-router-dom";
+import "./address.css";
 
 export function Address() {
+  // const [secObj, setSecObj ] = useState({name:"",address:'',district:'',phoneNO:'',email:''})
   const navigate = useNavigate()
   const secArray = useContext(MyContext)
   const [name, setName] = useState('')
@@ -13,15 +14,11 @@ export function Address() {
   const [email, setEmail] = useState('')
    function Submit(event){
     event.preventDefault();
-    let secObj = {
-      Name: name,
-      Address: address,
-      District: district,
-      PhoneNo: phoneNO,
-      Email: email
-    }
-    secArray.cart1.push(secObj)
-    console.log(secObj);
+    secArray.setSecArray({name: name,
+      address: address,
+      district: district,
+      phoneNO: phoneNO,
+      email: email})
     console.log("second",secArray.cart1);
     navigate("invoice");
    }

@@ -19,20 +19,20 @@
   }
   .shop-info {
     max-width: 50%;
+    line-height: 17px;
   }
   .shop-logo {
     max-width: 200px;
     height: auto;
   }
-  .invoice-details {
-    text-align: right;
+  .customor-details {
     max-width: 50%;
-  }
-  .customer-details {
-    margin-bottom: 40px;
+    text-align: justify;
+    line-height: 12px;
   }
   .itemized-list {
     margin-bottom: 20px;
+    width: 100%;
   }
   .itemized-list th, .itemized-list td {
     border-bottom: 1px solid #ddd;
@@ -43,4 +43,7 @@
     justify-content: flex-end;
     margin-top: 20px;
     font-weight: bold;
+  }
+  tbody{
+    text-align: center;
   }
