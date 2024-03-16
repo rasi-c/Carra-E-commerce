@@ -82,10 +82,10 @@ export  function Card(props) {
 <div className="main">
 <div className="card">
 <div className="card2">
-<Link to={`/view/${props.item.id}`}><button className='viewBtn' >view</button></Link>
-<svg className="glasses" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100px" height="100px" viewBox="0 0 100 100" xmlSpace="preserve">
+{/* <button className='viewBtn' >view</button> */}
+<Link to={`/view/${props.item.id}`}><svg className="glasses" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100px" height="100px" viewBox="0 0 100 100" xmlSpace="preserve">
     <image id="image0" width="100" height="100" x="0" y="0" href={Image}></image>
-  </svg>
+  </svg></Link>
   <div className="heading">{slicedTitle}</div>
     <div className="details">{Trnct}</div>
     <div className="price">RS : {price}</div>
