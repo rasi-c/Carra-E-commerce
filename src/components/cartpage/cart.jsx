@@ -33,7 +33,7 @@ export function Cart(props) {
   return (
     <div className="card2Sec">
       <svg
-        className="glasses"
+        className="glasses1"
         version="1.1"
         id="Layer_1"
         xmlns="http://www.w3.org/2000/svg"
@@ -56,10 +56,8 @@ export function Cart(props) {
       </svg>
       <div className="headDetails">
         <div className="headingSec">{props.item.newTitle}</div>
-        <div className="detailsSec">{props.item.newDetails}</div>
-      </div>
+        <div className="details">{props.item.newDetails}</div>
       <div className="display">
-        <div className="quantity">Quantity : {quantity}</div>
         <div className="disButtons">
           <button
             onClick={() => {
@@ -79,6 +77,7 @@ export function Cart(props) {
           >
             -
           </button>
+          <div className="quantity"> {quantity}</div>
           <button
             onClick={() => {
               let currentData = myNewArray.cart.find(item => item.newId === props.item.newId);
@@ -95,11 +94,12 @@ export function Cart(props) {
           </button>
         </div>
       </div>
-      <div className="priceSec">RS : {props.item.newPrice * quantity}</div>
-      <button className="closebtn" onClick={() => dataDelete(currentId)}>
-        <span className="X"></span>
+      </div>
+      <div className="priceSec">RS : {(props.item.newPrice * quantity).toFixed(2)}</div>
+      <button className="closebtn" onClick={() => dataDelete(currentId)}> Remove
+        {/* <span className="X"></span>
         <span className="Y"></span>
-        <div className="close">Close</div>
+        <div className="close">Close</div> */}
       </button>
     </div>
   );

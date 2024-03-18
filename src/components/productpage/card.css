@@ -3,7 +3,7 @@
 .card {
   width: 250px;
   height: 320px;
-  background-image: linear-gradient(163deg, #00ff75 0%, #3700ff 100%);
+  background-image: linear-gradient(163deg, #00ff75 0%, #3aa39f 100%);
   border-radius: 20px;
   transition: all .3s;
  }
@@ -56,8 +56,8 @@
   cursor: pointer;
   display: flex;
   align-items: center;
-  border: 1px solid #4951d7;
-  background-color: #4951d7;
+  border: 1px solid #3aa39f;
+  background-color: #3aa39f;
 }
 .btn1, .btn1__icon, .btn1__text {
   transition: all 0.3s;
@@ -89,11 +89,6 @@
   width: 30px;
   stroke: #fff;
 }
-
-.btn1:hover {
-  /* background: #4951d7; */
-}
-
 .btn1:hover .btn1__text {
   color: transparent;
 }
@@ -104,11 +99,11 @@
 }
 
 .btn1:active .btn1__icon {
-  background-color: #2630f3;
+  background-color: #3aa39f;
 }
 
 .btn1:active {
-  border: 1px solid #2630f3;
+  border: 1px solid #3aa39f;
 }
  /* .btn1{
   margin-top: 10px;

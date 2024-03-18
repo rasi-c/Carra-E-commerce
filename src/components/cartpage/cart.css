@@ -6,22 +6,29 @@
 }
 .card2Sec {
   padding-top: 20px;
-  width: 90%;
-  height: 150px;
-  /* overflow: scroll;     */
+  width: 100%;
+  height: 200px;
+  /* overflow: scroll; */
   display: flex;
   background-color: white;
   align-items: center;
   position: relative;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  margin-left: 15px;
+}
+.glasses1 {
+  width: 30%;
+  height: 80%;
 }
 .headDetails {
   width: 44%;
   /* background: red; */
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+  height: 120px;
+  justify-content: space-between;
+  /* margin-left: 50px; */
 }
 .detailsSec {
   padding: 10px 25px;
@@ -37,11 +44,16 @@
   font-weight: 600;
   font-style: normal;
 }
+.summary {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: medium;
+}
 .priceSec {
   width: 100px;
-  background-color: chartreuse;
   text-align: center;
-  font-size: 15px;
+  font-size: 17px;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-style: normal;
@@ -57,76 +69,49 @@
 .disButtons {
   gap: 10px;
   display: flex;
+  align-items: center;
+  border: 1px solid black;
+  height: 35px;
 }
 .display button {
   width: 40px;
   height: 20px;
-  border-radius: 5px;
+  /* border-radius: 5px; */
   border: none;
-  font-weight: 600;
+  font-weight: 400;
+  background-color: #fff;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }
 .closebtn {
   position: absolute;
-  right: 5px;
-  top: 5px;
-  width: 2em;
+  right: 180px;
+  top: 140px;
+  width: 5em;
   height: 2em;
   border: none;
-  background: rgba(180, 83, 107, 0.11);
+  color: rgb(250, 141, 141);
   border-radius: 5px;
-  transition: background 0.5s;
+  transition: ease 0.3s;
+  cursor: pointer;
+  background-color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
 }
-.X {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 2em;
-  height: 1.5px;
-  background-color: rgb(255, 255, 255);
-  transform: translateX(-50%) rotate(45deg);
-}
-
-.Y {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 2em;
-  height: 1.5px;
-  background-color: #fff;
-  transform: translateX(-50%) rotate(-45deg);
-}
-
-.close {
-  position: absolute;
-  display: flex;
-  padding: 0.8rem 1.5rem;
-  align-items: center;
-  justify-content: center;
-  transform: translateX(-50%);
-  top: 115%;
-  left: -40%;
-  width: 3em;
-  height: 1.7em;
-  font-size: 12px;
-  background-color: rgb(19, 22, 24);
-  color: rgb(255, 255, 255);
-  border: none;
-  border-radius: 3px;
-  pointer-events: none;
-  opacity: 0;
-}
-
 .closebtn:hover {
-  background-color: rgb(211, 21, 21);
+  color: rgb(211, 21, 21);
+  letter-spacing: 1px;
 }
 
 .closebtn:active {
   background-color: rgb(130, 0, 0);
 }
 
-.closebtn:hover > .close {
+/* .closebtn:hover > .close {
   animation: close 0.2s forwards 0.25s;
 }
 
@@ -134,11 +119,9 @@
   100% {
     opacity: 1;
   }
-}
+} */
 
 @media screen and (max-width: 600px) {
-  .headDetails {
-  }
   .detailsSec {
     font-size: 0.7rem;
     padding: 5px 5px;
@@ -155,7 +138,7 @@
   .display button {
     width: 25px;
   }
-  .priceSec{
+  .priceSec {
     margin-top: 40px;
     margin-right: 10px;
     font-size: 0.8rem;

@@ -3,21 +3,45 @@
 .maincartContainer {
   width: 100%;
   padding-top: 80px;
-  /* min-height: 100vh; */
+  min-height: 100vh;
   display: flex;
-  justify-content: center;
-  align-content: flex-start;
-  flex-wrap: wrap;
+  /* align-content: flex-start; */
   /* padding-top: 10px; */
   gap: 1rem;
   padding-bottom: 30px;
+  justify-content: center;
+}
+.right {
+  width: 40%;
+  /* margin-left: 15px; */
+  display: flex;
+  justify-content: flex-end;
+}
+.left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+.coupen,.shipping,.discount,.totalprice,.totalamountShow,.deliverydate{
+  display: flex;
+  justify-content: space-between;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
 }
 .amountDisplay {
-  background-color: orange;
+  background-color: white;
   padding: 20px;
   display: flex;
   justify-content: space-between;
-  width: 90%;
+  /* margin-right: 15px; */
+  height: 500px;
+  width: 75%;
+  margin-top: 30px;
+  border: 3px solid #e8e8eb;
+  flex-direction: column;
 }
 .totalamountShow {
   font-family: "Poppins", sans-serif;
@@ -27,41 +51,66 @@
   align-items: center;
   column-gap: 10px;
 }
-.amount{
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
-    font-style: normal;
-    font-size: 1.5rem;
-}
-.buttons{
-  width: 100px;
-  row-gap: 7px;
-  display: flex;
-  flex-direction: column
-}
-.buynowBtn,.addAdress{
-  width: 100%;
+.amount {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-style: normal;
+  font-size: 1.2rem;
+}
+.buttons {
+  width: 100%;
+  row-gap: 7px;
+  display: flex;
+  flex-direction: column;
+}
+.free{
+  color: red;
+}
+.buynowBtn,
+.addAdress {
+  width: 100%;
+  height: 35px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
   display: flex;
   justify-content: center;
+  background-color: #3aa39f;
+  border: none;
+  border-radius: 5px;
+  align-items: center;
+  cursor: pointer;
 }
-
-@media screen and (max-width:600px) {
-  .amountDisplay{
+.cartCount{
+  color: black;
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 1.1rem;
+}
+.countGrey{
+  margin-left: 10px;
+  color: #a2a3b1;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 0.9rem;
+}
+@media screen and (max-width: 600px) {
+  .amountDisplay {
     padding: 10px;
   }
-  .totalamountShow{
+  .totalamountShow {
     font-size: 0.7rem;
   }
-  .amount{
+  .amount {
     font-size: 1rem;
   }
-  .buttons{
+  .buttons {
     width: 50px;
   }
-  .buynowBtn,.addAdress{
+  .buynowBtn,
+  .addAdress {
     width: 50px;
     font-size: 0.6rem;
     height: 35px;
