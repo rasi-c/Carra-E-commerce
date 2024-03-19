@@ -4,14 +4,10 @@ import "./cart.css";
 
 export function Cart(props) {
   const myNewArray = useContext(MyContext);
-  // const [value, setValue] = useState(1);
   const [quantity, setQuantity] = useState(props.item.quantity);
   const currentId = props.item.newId;
   console.log("props is : ", props);
   console.log("cart id : ", currentId);
-  // const  newKey = 'quantity';
-  // const newValue = quantity;
-  // props.item.newKey = newValue;
   console.log("latest props quantity ",quantity);
   const totalAmount = myNewArray.cart.reduce((total, item) => {
     return total + (item.newPrice * item.quantity);
@@ -56,10 +52,10 @@ export function Cart(props) {
       </svg>
       <div className="headDetails">
         <div className="headingSec">{props.item.newTitle}</div>
-        <div className="details">{props.item.newDetails}</div>
+        <div className="details4">{props.item.newDetails}</div>
       <div className="display">
         <div className="disButtons">
-          <button
+          <button className="countBtn"
             onClick={() => {
               if (quantity <= 1) {
                 setQuantity(1);
@@ -78,7 +74,7 @@ export function Cart(props) {
             -
           </button>
           <div className="quantity"> {quantity}</div>
-          <button
+          <button className="countBtn"
             onClick={() => {
               let currentData = myNewArray.cart.find(item => item.newId === props.item.newId);
               
@@ -93,14 +89,13 @@ export function Cart(props) {
             +
           </button>
         </div>
+        <button className="closebtn" onClick={() => dataDelete(currentId)}> Remove</button>
       </div>
       </div>
+      <div className="rateRemove">
+      
       <div className="priceSec">RS : {(props.item.newPrice * quantity).toFixed(2)}</div>
-      <button className="closebtn" onClick={() => dataDelete(currentId)}> Remove
-        {/* <span className="X"></span>
-        <span className="Y"></span>
-        <div className="close">Close</div> */}
-      </button>
+      </div>
     </div>
   );
 }
