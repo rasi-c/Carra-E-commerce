@@ -2,9 +2,9 @@ import React, { useContext, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { MyContext } from "../../App";
 import "./address.css";
+import { AddressDetails } from "./adresssmall";
 
 export function Address() {
-  // const [secObj, setSecObj ] = useState({name:"",address:'',district:'',phoneNO:'',email:''})
   const navigate = useNavigate()
   const secArray = useContext(MyContext)
   const [name, setName] = useState('')
@@ -14,21 +14,30 @@ export function Address() {
   const [email, setEmail] = useState('')
    function Submit(event){
     event.preventDefault();
-    secArray.setSecArray({name: name,
+    secArray.setSecArray([
+      ...secArray.cart1,
+      {name: name,
       address: address,
       district: district,
       phoneNO: phoneNO,
-      email: email})
+      email: email}
+    ])
     console.log("second",secArray.cart1);
-    navigate("invoice");
+    setName('')
+    setAddress('')
+    setEmail('')
+    setPhoneNo('')
+    // navigate("invoice");
    }
   return (
     <div className="addressContainer">
+      <div className="formContainer">
+      <div className="header3">Address</div>
       <form action="" onSubmit={Submit}>
         <label htmlFor="">Name :</label>
-        <input type="text" required onChange={(event)=> setName(event.target.value)}/>
+        <input value={name} type="text" required onChange={(event)=> setName(event.target.value)}/>
         <label htmlFor="" >Address :</label>
-        <textarea name="" id="" cols="30" rows="10" onChange={(event)=> setAddress(event.target.value)} required></textarea>
+        <textarea value={address} name="" id="" cols="30" rows="10" onChange={(event)=> setAddress(event.target.value)} required></textarea>
         <label htmlFor="">District :</label>
         <select name="" id="" onChange={(event)=> setDistrict(event.target.value)} required>
         <option value="Thiruvananthapuram">Thiruvananthapuram</option>
@@ -48,11 +57,19 @@ export function Address() {
         </select>
        
         <label htmlFor="">Phone No :</label>
-        <input type="tel" onChange={(event)=> setPhoneNo(event.target.value)} required/>
+        <input value={phoneNO} type="tel" onChange={(event)=> setPhoneNo(event.target.value)} required/>
         <label htmlFor="">Email :</label>
-        <input type="email" onChange={(event)=> setEmail(event.target.value)} required/>
-        <button type="submit" className="subBtn" >Submit</button>
+        <input value={email} type="email" onChange={(event)=> setEmail(event.target.value)} required/>
+        <button type="submit" className="subBtn" >Add Address</button>
       </form>
+      </div>
+      <div className="secContainer">
+        <div className="addressMain">
+          {secArray.cart1.map((item)=> {
+            return <AddressDetails item={item}/>
+          })}
+        </div>
+      </div>
     </div>
   );
 }
