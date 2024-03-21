@@ -19,11 +19,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(177, 137, 137);
 }
 .addressMain{
-  background-color: white;
-  width: 70%;
+  width: 90%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 form {
   display: flex;
@@ -56,34 +59,34 @@ form select,option{
 input{
   /* width: 300px; */
   height: 30px;
-  background-color: #e0e0e0;
+  background-color: #f3f3f3;
   border: none;
   outline: none;
   padding: 10px 20px;
   border-radius: 10px;
-  box-shadow: inset -4px -4px 8px rgba(255, 255, 255, 0.5),
-              inset 4px 4px 8px rgba(0, 0, 0, 0.1);
+  /* box-shadow: inset -4px -4px 8px rgba(255, 255, 255, 0.5),
+              inset 4px 4px 8px rgba(0, 0, 0, 0.1); */
   font-size: 16px;
 }
 textarea{
   height: 120px;
-  background-color: #e0e0e0;
+  background-color: #f3f3f3;
   border: none;
   outline: none;
   padding: 10px 20px;
   border-radius: 10px;
-  box-shadow: inset -4px -4px 8px rgba(255, 255, 255, 0.5),
-              inset 4px 4px 8px rgba(0, 0, 0, 0.1);
+  /* box-shadow: inset -4px -4px 8px rgba(255, 255, 255, 0.5),
+              inset 4px 4px 8px rgba(0, 0, 0, 0.1); */
   font-size: 16px;
 }
 select , option{
-  background-color: #e0e0e0;
+  background-color: #f3f3f3;
   border: none;
   outline: none;
   padding: 10px 20px;
   border-radius: 10px;
-  box-shadow: inset -4px -4px 8px rgba(255, 255, 255, 0.5),
-              inset 4px 4px 8px rgba(0, 0, 0, 0.1);
+  /* box-shadow: inset -4px -4px 8px rgba(255, 255, 255, 0.5),
+              inset 4px 4px 8px rgba(0, 0, 0, 0.1); */
   font-size: 16px;
 }
 .subBtn{

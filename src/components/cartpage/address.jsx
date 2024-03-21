@@ -6,7 +6,7 @@ import { AddressDetails } from "./adresssmall";
 
 export function Address() {
   const navigate = useNavigate()
-  const secArray = useContext(MyContext)
+  const secondArray = useContext(MyContext)
   const [name, setName] = useState('')
   const [address, setAddress] = useState('')
   const [phoneNO, setPhoneNo] = useState('')
@@ -14,15 +14,20 @@ export function Address() {
   const [email, setEmail] = useState('')
    function Submit(event){
     event.preventDefault();
-    secArray.setSecArray([
-      ...secArray.cart1,
-      {name: name,
+    // let Count = 0;
+    // console.log("first is : ",Count = Count+1);
+    // console.log("second  is : ",Count = Count+1);
+    let newObj = {
+      // id: Count++,
+      name: name,
       address: address,
       district: district,
       phoneNO: phoneNO,
-      email: email}
-    ])
-    console.log("second",secArray.cart1);
+      email: email
+    }
+    secondArray.cart1.push(newObj)
+    console.log("secondarray cart1",secondArray.cart1);
+    console.log("second",secondArray.cart1);
     setName('')
     setAddress('')
     setEmail('')
@@ -65,7 +70,7 @@ export function Address() {
       </div>
       <div className="secContainer">
         <div className="addressMain">
-          {secArray.cart1.map((item)=> {
+          {secondArray.cart1.map((item)=> {
             return <AddressDetails item={item}/>
           })}
         </div>

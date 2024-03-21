@@ -1,8 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import { MyContext } from '../../App';
 import "./card.css";
-import { View } from './view';
-import { Link } from 'react-router-dom';
 
 export  function Card(props) {
   console.log("props is : ",props);

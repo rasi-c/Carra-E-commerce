@@ -1,5 +1,43 @@
-.main{
-    background-color: white;
-    margin-top: 20px;
-    padding-left: 30px;
+.mainAddress {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  background-color: white;
+  margin-top: 20px;
+  padding-left: 30px;
+  width: 100%;
+  max-height: 110px;
+  /* border: 2px solid black; */
+  display: flex;
+}
+.leftAddress {
+  width: 80%;
+  height: 100%;
+  line-height: 1.5;
+}
+.rightDelete {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-end;
+  margin-right: 15px;
+  color: white;
+}
+.userName {
+  font-weight: 700;
+  font-size: clamp(15px, 1.7vw, 20px);
+}
+.userAddress {
+  font-weight: 400;
+  font-size: clamp(10px, 1.3vw, 15px);
+}
+.userDistrict {
+    font-size: clamp(10px, 1.3vw, 15px);
+}
+.userPhoneNo {
+    font-size: clamp(10px, 1.3vw, 15px);
+}
+.addressDelete{
+    color: rgb(255 68 68);
 }
