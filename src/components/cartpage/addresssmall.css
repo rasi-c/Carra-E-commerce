@@ -9,8 +9,12 @@
   /* border: 2px solid black; */
   display: flex;
 }
+.radioButton{
+  width: 10%;
+  height: 100%;
+}
 .leftAddress {
-  width: 80%;
+  width: 70%;
   height: 100%;
   line-height: 1.5;
 }
@@ -40,4 +44,5 @@
 }
 .addressDelete{
     color: rgb(255 68 68);
+    cursor: pointer;
 }

@@ -3,6 +3,10 @@ import { useNavigate } from "react-router-dom";
 import { MyContext } from "../../App";
 import "./address.css";
 import { AddressDetails } from "./adresssmall";
+import { Bounce, toast } from "react-toastify";
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+let Count = 0;
 
 export function Address() {
   const navigate = useNavigate()
@@ -14,24 +18,35 @@ export function Address() {
   const [email, setEmail] = useState('')
    function Submit(event){
     event.preventDefault();
-    // let Count = 0;
-    // console.log("first is : ",Count = Count+1);
-    // console.log("second  is : ",Count = Count+1);
-    let newObj = {
-      // id: Count++,
-      name: name,
-      address: address,
-      district: district,
-      phoneNO: phoneNO,
-      email: email
+    if(secondArray.cart1.length < 3){
+      let newObj = {
+        id: Count++,
+        name: name,
+        address: address,
+        district: district,
+        phoneNO: phoneNO,
+        email: email
+      }
+      secondArray.cart1.push(newObj)
+      console.log("secondarray cart1",secondArray.cart1);
+      console.log("second",secondArray.cart1);
+      setName('')
+      setAddress('')
+      setEmail('')
+      setPhoneNo('')
+    }else{
+      toast.warn('maximue Address is 3', {
+        position: "bottom-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "dark",
+        transition: Bounce,
+        });
     }
-    secondArray.cart1.push(newObj)
-    console.log("secondarray cart1",secondArray.cart1);
-    console.log("second",secondArray.cart1);
-    setName('')
-    setAddress('')
-    setEmail('')
-    setPhoneNo('')
     // navigate("invoice");
    }
   return (
@@ -70,6 +85,7 @@ export function Address() {
       </div>
       <div className="secContainer">
         <div className="addressMain">
+        <ToastContainer />
           {secondArray.cart1.map((item)=> {
             return <AddressDetails item={item}/>
           })}
