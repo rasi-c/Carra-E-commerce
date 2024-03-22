@@ -15,7 +15,7 @@
 }
 .secContainer{
   width: 50%;
-  height: 100%;
+  /* height: 100%; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -107,4 +107,29 @@ select , option{
   box-shadow: -2px -2px 4px rgba(255, 255, 255, 0.5),
               2px 2px 4px rgba(0, 0, 0, 0.1);
   background-color: #007c78;
+}
+@media screen and (max-width: 600px) {
+  .addressContainer{
+    /* flex-wrap: wrap; */
+    flex-direction: column-reverse;
+    position: relative;
+  }
+  .formContainer{
+    width: 100%;
+    /* margin-top: 70px; */
+  }
+  .secContainer{
+    width: 100%;
+    padding-top: 100px;
+  }
+  form{
+    width: 80%;
+    margin-bottom: 20px;
+  }
+  .header3 {
+    margin-top: 5rem;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
 }

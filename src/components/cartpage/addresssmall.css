@@ -18,6 +18,9 @@
   height: 100%;
   line-height: 1.5;
 }
+.radioButton input{
+  cursor: pointer;
+}
 .rightDelete {
   width: 20%;
   height: 100%;
@@ -30,7 +33,7 @@
 }
 .userName {
   font-weight: 700;
-  font-size: clamp(15px, 1.7vw, 20px);
+  font-size: clamp(12px, 1.7vw, 20px);
 }
 .userAddress {
   font-weight: 400;
@@ -43,6 +46,7 @@
     font-size: clamp(10px, 1.3vw, 15px);
 }
 .addressDelete{
-    color: rgb(255 68 68);
-    cursor: pointer;
+  color: rgb(255 68 68);
+  cursor: pointer;
+  font-size: clamp(13px, 1.3vw, 15px);
 }

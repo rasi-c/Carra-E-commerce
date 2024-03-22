@@ -34,6 +34,7 @@ export function Address() {
       setAddress('')
       setEmail('')
       setPhoneNo('')
+      setDistrict('')
     }else{
       toast.warn('maximue Address is 3', {
         position: "bottom-right",
@@ -59,7 +60,8 @@ export function Address() {
         <label htmlFor="" >Address :</label>
         <textarea value={address} name="" id="" cols="30" rows="10" onChange={(event)=> setAddress(event.target.value)} required></textarea>
         <label htmlFor="">District :</label>
-        <select name="" id="" onChange={(event)=> setDistrict(event.target.value)} required>
+        <select value={district} name="" id="" onChange={(event)=> setDistrict(event.target.value)} required>
+        <option value='' disabled selected>Choose District</option>
         <option value="Thiruvananthapuram">Thiruvananthapuram</option>
         <option value="Kollam">Kollam</option>
         <option value="Pathanamthitta">Pathanamthitta</option>
