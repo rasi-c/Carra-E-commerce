@@ -13,7 +13,25 @@ export const MyContext = createContext();
 
 function App() {
   const [array, setarray] = useState([]);
-  const [secArray, setSecArray] = useState([]);
+  const [selectedOption, setSelectedOption] = useState(null);
+  const [secArray, setSecArray] = useState([
+    {
+        "id": 0,
+        "name": "asdfgh",
+        "address": "ASDFGHJ",
+        "district": "Kannur",
+        "phoneNO": "1234567890",
+        "email": "a@gmail.com"
+    },
+    {
+        "id": 1,
+        "name": "sahl",
+        "address": "ASDFGHJ",
+        "district": "Kannur",
+        "phoneNO": "1234567890",
+        "email": "a@gmail.com"
+    }
+]);
 
   return (
     <MyContext.Provider
@@ -21,7 +39,9 @@ function App() {
         cart: array,
         arrkey: setarray,
         cart1: secArray,
-        setSecArray: setSecArray
+        setSecArray: setSecArray,
+        selectedOption: selectedOption,
+        setSelectedOption: setSelectedOption
       }}
     >
       <div className="App">

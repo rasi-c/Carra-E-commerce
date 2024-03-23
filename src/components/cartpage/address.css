@@ -5,7 +5,7 @@
   min-height: 100vh;
   width: 100%;
 }
-.formContainer{
+.formContainer {
   width: 50%;
   height: 100%;
   display: flex;
@@ -13,14 +13,15 @@
   flex-direction: column;
   align-items: center;
 }
-.secContainer{
+.secContainer {
   width: 50%;
   /* height: 100%; */
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
-.addressMain{
+.addressMain {
   width: 90%;
   height: 100%;
   display: flex;
@@ -40,13 +41,14 @@ form {
   font-style: normal;
   font-size: clamp(11px, 1.3vw, 14px);
 }
-form select,option{
+form select,
+option {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: clamp(11px, 1.3vw, 14px);
 }
-.header3{
+.header3 {
   margin-top: 6rem;
   width: 100%;
   padding-left: 10%;
@@ -56,7 +58,7 @@ form select,option{
   font-style: normal;
   font-size: clamp(12px, 1.5vw, 17px);
 }
-input{
+input {
   /* width: 300px; */
   height: 30px;
   background-color: #f3f3f3;
@@ -68,7 +70,7 @@ input{
               inset 4px 4px 8px rgba(0, 0, 0, 0.1); */
   font-size: 16px;
 }
-textarea{
+textarea {
   height: 120px;
   background-color: #f3f3f3;
   border: none;
@@ -79,7 +81,8 @@ textarea{
               inset 4px 4px 8px rgba(0, 0, 0, 0.1); */
   font-size: 16px;
 }
-select , option{
+select,
+option {
   background-color: #f3f3f3;
   border: none;
   outline: none;
@@ -89,40 +92,61 @@ select , option{
               inset 4px 4px 8px rgba(0, 0, 0, 0.1); */
   font-size: 16px;
 }
-.subBtn{
-   margin-top: 3rem;
-   background-color: #3aa39f;
-   height: 40px;
-   border: none;
-   outline: none;
-   border-radius: 10px;
-   box-shadow: -4px -4px 8px rgba(255, 255, 255, 0.5),
-               4px 4px 8px rgba(0, 0, 0, 0.1);
-   font-size: 14px;
-   cursor: pointer;
-   color: white;
-   transition: all 0.3s ease;
+.subBtn {
+  margin-top: 3rem;
+  background-color: #3aa39f;
+  height: 40px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  box-shadow: -4px -4px 8px rgba(255, 255, 255, 0.5),
+    4px 4px 8px rgba(0, 0, 0, 0.1);
+  font-size: 14px;
+  cursor: pointer;
+  color: white;
+  transition: all 0.3s ease;
 }
 .subBtn:hover {
   box-shadow: -2px -2px 4px rgba(255, 255, 255, 0.5),
-              2px 2px 4px rgba(0, 0, 0, 0.1);
+    2px 2px 4px rgba(0, 0, 0, 0.1);
   background-color: #007c78;
 }
+.billButton {
+  margin-top: 3rem;
+  background-color: #3aa39f;
+  height: 40px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  box-shadow: -4px -4px 8px rgba(255, 255, 255, 0.5),
+    4px 4px 8px rgba(0, 0, 0, 0.1);
+  font-size: 14px;
+  cursor: pointer;
+  color: white;
+  transition: all 0.3s ease;
+  width: 40%;
+}
+.noAddress{
+    font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: clamp(11px, 1.3vw, 14px);
+}
 @media screen and (max-width: 600px) {
-  .addressContainer{
+  .addressContainer {
     /* flex-wrap: wrap; */
     flex-direction: column-reverse;
     position: relative;
   }
-  .formContainer{
+  .formContainer {
     width: 100%;
     /* margin-top: 70px; */
   }
-  .secContainer{
+  .secContainer {
     width: 100%;
     padding-top: 100px;
   }
-  form{
+  form {
     width: 80%;
     margin-bottom: 20px;
   }
@@ -131,5 +155,9 @@ select , option{
     position: absolute;
     left: 0px;
     top: 0px;
-}
+  }
+  .billButton{
+    width: 80%;
+    min-height: 38px;
+  }
 }
