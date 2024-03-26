@@ -28,8 +28,8 @@ export function Mainproduct() {
         // Display loading text if loading is true
       ) : (
     <div className='maincontainer'>{
-      product.map((item) => {
-        return <Card item={item} />;
+      product.map((item,index) => {
+        return <Card item={item} key={index}/>;
       })
     }</div>
     )}

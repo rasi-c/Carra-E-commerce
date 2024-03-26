@@ -79,7 +79,7 @@ export function Address() {
             onChange={(event) => setDistrict(event.target.value)}
             required
           >
-            <option value="" disabled selected>
+            <option value={''} disabled >
               Choose District
             </option>
             <option value="Thiruvananthapuram">Thiruvananthapuram</option>

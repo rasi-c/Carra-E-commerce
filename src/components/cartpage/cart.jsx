@@ -6,23 +6,16 @@ export function Cart(props) {
   const myNewArray = useContext(MyContext);
   const [quantity, setQuantity] = useState(props.item.quantity);
   const currentId = props.item.newId;
-  console.log("props is : ", props);
-  console.log("cart id : ", currentId);
-  console.log("latest props quantity ",quantity);
   const totalAmount = myNewArray.cart.reduce((total, item) => {
     return total + (item.newPrice * item.quantity);
   }, 0);
   props.setkey(totalAmount)
-  console.log("setrate is :",props.setkey)
-  console.log("total amount is:", totalAmount);
-  
   function dataDelete(data) {
     console.log("mynewarray cart is : ", myNewArray.cart);
     const newcart = myNewArray.cart.filter((item) => {
       return data !== item.newId;
     });
     myNewArray.arrkey(newcart);
-    console.log(myNewArray.cart);
     props.setkey(totalAmount)
   }
 

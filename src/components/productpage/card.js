@@ -4,10 +4,8 @@ import { MyContext } from '../../App';
 import "./card.css";
 
 export  function Card(props) {
-  console.log("props is : ",props);
   const [isAddedTocart,setIsAddedTocart] = useState(false)
   const myArray = useContext(MyContext)
-  console.log("my Array Is : ",myArray);
     const newTitle = props.item.title;
     const newTitleArray = newTitle.split(" ");
     const slicedTitle = newTitleArray.splice(0,2);

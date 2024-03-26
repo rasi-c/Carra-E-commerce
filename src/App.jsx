@@ -14,24 +14,7 @@ export const MyContext = createContext();
 function App() {
   const [array, setarray] = useState([]);
   const [selectedOption, setSelectedOption] = useState(null);
-  const [secArray, setSecArray] = useState([
-    {
-        "id": 0,
-        "name": "asdfgh",
-        "address": "ASDFGHJ",
-        "district": "Kannur",
-        "phoneNO": "1234567890",
-        "email": "a@gmail.com"
-    },
-    {
-        "id": 1,
-        "name": "sahl",
-        "address": "ASDFGHJ",
-        "district": "Kannur",
-        "phoneNO": "1234567890",
-        "email": "a@gmail.com"
-    }
-]);
+  const [secArray, setSecArray] = useState([]);
 
   return (
     <MyContext.Provider
