@@ -113,10 +113,6 @@
   color: rgb(211, 21, 21);
   letter-spacing: 1px;
 }
-
-.closebtn:active {
-  background-color: rgb(130, 0, 0);
-}
 .rateRemove {
   display: flex;
   height: 100%;
