@@ -23,9 +23,14 @@ a {
   height: 45px;
 }
 h3 {
+  width: auto;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: clamp(12px, 1.7vw, 20px);
 }
 .navbar button {
   text-decoration: none;
@@ -47,7 +52,7 @@ h3 {
 .mainname {
   padding-left: 25px;
   font-size: clamp(8px, 3vw, 15px);
-  width: 20vw;
+  width: 21vw;
 }
 @media screen and (max-width: 576px) {
   .switches {

@@ -5,7 +5,7 @@
 }
  .card2 {
   width: 250px;
-  height: 320px;
+  height: 360px;
   background-color: white;
   border-radius: 15px;
   transition: all .2s;
@@ -30,7 +30,7 @@
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-style: normal;
-  padding-top: 10px;
+  padding-top: 15px;
   width: 70%;
  }
  .price{
@@ -40,6 +40,12 @@
  }
  .price2{
   font-weight: 400;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+ }
+ .glasses{
+  margin-top: 20px;
  }
  .details{
   width: 120px;
