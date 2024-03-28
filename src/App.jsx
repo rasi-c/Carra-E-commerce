@@ -28,7 +28,7 @@ function App() {
       }}
     >
       <div className="App">
-        <div className="container-fluid">
+        <div className="containerMain">
           <Navbar />
           <Routes>
             <Route path="home" element={<Content />} />
