@@ -34,7 +34,7 @@ export function Content({ showProductPage }) {
       <div className="secondContainer">
         <div className="secondHeader">
           <h2>Featured Products</h2>
-          <h6>Summer Collection New Modern Design</h6>
+          <h6  style={{fontWeight:'400'}}>Summer Collection New Modern Design</h6>
         </div>
         <div className="itemContainer">
           <div className="item">
@@ -679,9 +679,9 @@ export function Content({ showProductPage }) {
           <h2 style={{textAlign:'center'}}>Up to <span>70% off </span>- all t-shirts & Accessories</h2>
           <button type="button" class="btn btn-light">Explore More</button>
         </div>
-        <div className="w-100 d-flex align-items-center flex-column">
+        <div style={{padding:'50px 0px'}} className="w-100 d-flex align-items-center flex-column">
         <h2>New Arrivals</h2>
-        <h6 className="text-center">Summer Collection New Modern Design</h6>
+        <h6 style={{fontWeight:'400'}} className="text-center">Summer Collection New Modern Design</h6>
         </div>
         <div className="itemContainer">
         <div className="item">
