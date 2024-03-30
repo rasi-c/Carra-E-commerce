@@ -76,21 +76,17 @@ export  function Card(props) {
       )
       
   return (
-<div className="main">
 <div className="card2">
-{/* <button className='viewBtn' >view</button> */}
 <Link to={`/view/${props.item.id}`}><svg className="glasses" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100px" height="100px" viewBox="0 0 100 100" xmlSpace="preserve">
     <image id="image0" width="100" height="100" x="0" y="0" href={Image}></image>
   </svg></Link>
   <div className="heading">{slicedTitle}</div>
-    <div className="details">{Trnct}</div>
     <div className="price"><div  className='price2'>Rating : {props.item.rating.rate}</div><div>RS : {price}</div></div>
-    <button type="button" className={`btn1 ${isAddedTocart?'added':'notAddded'} `} onClick={()=>AddCart(slicedTitle,Trnct,price,Image,Id,isAvailable,quantity)}>
-  <span className="btn1__text ">{` ${isAddedTocart?'Remove Item':'Add Item'} `}</span>
-  <span className={`btn1__icon ${isAddedTocart?'btnicon':'btniconnot'} `}><svg xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24" stroke="currentColor" height="24" fill="none" className="svg"><line y2="19" y1="5" x2="12" x1="12"></line><line y2="12" y1="12" x2="19" x1="5"></line></svg></span>
+    <button type="button" className={`btn1 ${isAddedTocart?'added btn btn-outline-danger':'notAddded btn btn-outline-success'} `} onClick={()=>AddCart(slicedTitle,Trnct,price,Image,Id,isAvailable,quantity)}>
+  <span className="btn1__text ">{isAddedTocart?<i class="bi bi-cart-x"></i>:<i class="bi bi-cart"></i>} </span>
+  {/* <span className={`btn1__icon ${isAddedTocart?'btnicon':'btniconnot'} `}><svg xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24" stroke="currentColor" height="24" fill="none" className="svg"><line y2="19" y1="5" x2="12" x1="12"></line><line y2="12" y1="12" x2="19" x1="5"></line></svg></span> */}
 </button>
   </div>
-</div>
   )
 }
 
