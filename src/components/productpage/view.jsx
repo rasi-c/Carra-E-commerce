@@ -10,7 +10,7 @@ export function View() {
   const [rotate, setRotate] = useState()
 
   useEffect(() => {
-    fetch(`https://fakestoreapi.com/products/${cardId}`)
+    fetch(`https://api.escuelajs.co/api/v1/products/${cardId}`)
       .then((res) => res.json())
       .then((data) => {
         setSingleData(data);
@@ -47,12 +47,12 @@ export function View() {
       ) : (
         <div className="containerDetails">
           <div className="leftSide">
-            <div className="catogory1">Category / {singleData?.category}</div>
+            <div className="catogory1">Category / {singleData?.title}</div>
             <div className="header1">{singleData?.title}</div>
             <div className="count1">
-              <div className="rating1">Rating : {singleData?.rating?.rate}</div>
+              <div className="rating1">Rating : {singleData?.price}</div>
               <div className="sale1">
-                Sold Count : {singleData?.rating?.count}
+                Sold Count : {singleData?.price}
               </div>
             </div>
             <div className="details1">{singleData?.description}</div>
@@ -87,7 +87,7 @@ export function View() {
             </div>
           </div>
           <div className="rightSide">
-            <img src={singleData?.image} alt="i" className="photo1" style={{transform: `rotate(${rotate}deg)`, transition: 'transform 0.5s ease'}} />
+            <img src={singleData?.images} alt="i" className="photo1" style={{transform: `rotate(${rotate}deg)`, transition: 'transform 0.5s ease'}} />
             <div className="rotatContainer">
               <div className="rightImg" onClick={()=> changeRotate(1)}><img src={singleData?.image} alt="i" className="photos2" /></div>
               <div className="leftImg" onClick={()=> changeRotate(2)}><img src={singleData?.image} alt="i" className="photos3" /></div>

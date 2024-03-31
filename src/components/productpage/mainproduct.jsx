@@ -9,7 +9,7 @@ export function Mainproduct() {
   const [loading, setLoading] = useState(true);
     const [product, setData] = useState([]);
     useEffect(() => {
-      const apiUrl = "https://fakestoreapi.com/products?limit=30";
+      const apiUrl = "https://api.escuelajs.co/api/v1/products?offset=0&limit=30";
       fetch(apiUrl)
         .then((response) => response.json())
         .then((product) => {

@@ -9,18 +9,22 @@
   transition: all 0.2s;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   position: relative;
   box-shadow: 20px 20px 30px rgb(0, 0, 0, 0.2);
-  padding: 25px;
+  padding: 10px;
   border: 0.1px solid #0881793e;
+  justify-content: flex-start;
 }
-.glasses {
+.card2 img{
+  width: 100%;
+  border-radius: 15px;
+}
+/* .glasses {
   margin-top: 20px;
   width: 200px;
   height: 150px;
-}
+} */
 .heading {
   width: 100%;
   font-size: clamp(14px, 1.4vw, 19px);
