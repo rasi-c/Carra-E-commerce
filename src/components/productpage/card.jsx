@@ -10,13 +10,6 @@ export function Card(props) {
   const newTitleArray = newTitle.split(" ");
   const slicedTitle = newTitleArray.splice(0, 3).join(" ");
 
-  function truncateText(text, maxLength) {
-    if (text.length <= maxLength) {
-      return text;
-    } else {
-      return text.slice(0, maxLength) + "...";
-    }
-  }
   const ogText = props.item.description;
   const Trnct = ogText;
   const price = props.item.price;

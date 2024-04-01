@@ -6,6 +6,8 @@ export function Cart(props) {
   const myNewArray = useContext(MyContext);
   const [quantity, setQuantity] = useState(props.item.quantity);
   const currentId = props.item.newId;
+  const paragraph = props.item.newDetails;
+  const truncatedParagraph = truncateText(paragraph, 10);
   const totalAmount = myNewArray.cart.reduce((total, item) => {
     return total + (item.newPrice * item.quantity);
   }, 0);
@@ -18,6 +20,15 @@ export function Cart(props) {
     myNewArray.arrkey(newcart);
     props.setkey(totalAmount)
   }
+
+  function truncateText(text, maxLength) {
+    const words = text.split(" ");
+    if (words.length > maxLength) {
+        return words.slice(0, maxLength).join(" ") + "...";
+    } else {
+        return text;
+    }
+} 
 
   return (
     <div className="card2Sec">
@@ -45,7 +56,7 @@ export function Cart(props) {
       </svg>
       <div className="headDetails">
         <div className="headingSec">{props.item.newTitle}</div>
-        <div className="details4">{props.item.newDetails}</div>
+        <div className="details4">{truncatedParagraph}</div>
       <div className="display">
         <div className="disButtons">
           <button className="countBtn"
