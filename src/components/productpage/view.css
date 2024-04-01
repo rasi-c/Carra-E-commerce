@@ -25,7 +25,7 @@
   margin-top: 60px;
 }
 .shadow {
-  width: 15rem;
+  width: 35%;
   height: 11rem;
   position: absolute;
   /* border-radius: 50%; */
@@ -56,12 +56,13 @@
   display: flex;
   justify-content: space-around;
   margin-top: 30px;
+  cursor: pointer;
 }
 .rotatContainer img {
   width: 80%;
   height: 80%;
 }
-.photos3 {
+/* .photos3 {
   transform: rotate(90deg);
 }
 .photos4 {
@@ -69,7 +70,7 @@
 }
 .photos5 {
   transform: rotate(270deg);
-}
+} */
 .leftSide {
   width: 50%;
   display: flex;
@@ -79,11 +80,12 @@
   justify-content: center;
 }
 .photo1 {
-  max-width: 230px;
-  max-height: 240px;
+  max-width: 300px;
+  max-height: 300px;
   overflow: hidden;
   display: flex;
   justify-content: center;
+  border-radius: 15px;
   z-index: 2;
 }
 .header1 {
@@ -95,6 +97,9 @@
   font-style: normal;
   width: 70%;
   /* margin-bottom: 100px;   */
+}
+.catogory1 span{
+  color: grey;
 }
 .details1 {
   width: 70%;
@@ -239,8 +244,8 @@
     width: 90%;
   }
   .photo1 {
-    max-width: 100px;
-    max-height: 150px;
+    max-width: 200px;
+    max-height: 200px;
   }
   .header1 {
     font-size: 1.1rem;
