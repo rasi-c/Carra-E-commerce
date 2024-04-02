@@ -3,7 +3,7 @@
 
 .card2 {
   width: 250px;
-  height: 350px;
+  height: 380px;
   background-color: white;
   border-radius: 20px;
   transition: all 0.2s;
@@ -14,7 +14,7 @@
   box-shadow: 20px 20px 30px rgb(0, 0, 0, 0.2);
   padding: 15px;
   border: 0.1px solid #0881793e;
-  justify-content: flex-start;
+  justify-content: space-evenly;
 }
 .card2 img{
   width: 100%;

@@ -7,7 +7,7 @@ export function Navbar({onClickTab=()=>{}}){
     return(
         <div className="navbar">
             <div className="mainname">
-              <img src="" alt="" style={{width:'100px', height:'40px'}}/>
+              <img src="/assets/storeWhite.png" alt="" style={{width:'150px', height:'60px'}}/>
             </div>
             <div className="switches">
                 <div className="home"><Link to="/home"><button onClick={()=>onClickTab('home')}>HOME</button></Link></div>
