@@ -2,7 +2,6 @@ import React from 'react'
 import { useState, useEffect } from 'react';
 import { Card } from './card';
 import './mainproduct.css'
-import img2 from '../images/image2.png'
 
 
 export function Mainproduct() {
@@ -55,13 +54,25 @@ export function Mainproduct() {
   </div>
   <div className="carousel-inner">
     <div className="carousel-item active">
-      <img src={img2} className="d-block w-100" alt="..." />
+      <div className="carasoulContainer" style={{color:'black'}}>
+      <h1>buy 1 get <span style={{color:'red'}}>1 free</span></h1>
+      <h6 style={{fontWeight:'300', fontSize:'1.2rem'}}>The best classic dress is on sale</h6>
+      <img src="/assets/offer.png" alt="" />
+      </div>
     </div>
     <div className="carousel-item">
-      <img src={img2} className="d-block w-100" alt="..." />
+    <div className="carasoulContainer" style={{color:'black'}}>
+      <h6 style={{fontWeight:'300', fontSize:'1.2rem'}}>crazy deals</h6>
+      <h1 style={{fontWeight:'400'}}>#stayhome</h1>
+      <h6 style={{fontWeight:'300', fontSize:'1.2rem'}}>Save more with coupons & up to <span style={{color:'red'}}>70% off!</span></h6>
+      </div>
     </div>
     <div className="carousel-item">
-      <img src={img2} className="d-block w-100" alt="..." />
+    <div className="carasoulContainer" style={{color:'black'}}>
+    <h1>SEASONAL SALE</h1>
+    <h6><span style={{color:'red', fontWeight:'300'}}>Winter Collection -50% OFF</span></h6>
+    <img src="/assets/offer2.png" alt="" />
+    </div>
     </div>
   </div>
   <button
