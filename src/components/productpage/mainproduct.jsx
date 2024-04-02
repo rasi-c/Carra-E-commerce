@@ -70,7 +70,7 @@ export function Mainproduct() {
     <div className="carousel-item">
     <div className="carasoulContainer" style={{color:'black'}}>
     <h1>SEASONAL SALE</h1>
-    <h6><span style={{color:'red', fontWeight:'300'}}>Winter Collection -50% OFF</span></h6>
+    <h6 style={{fontSize:'1.2rem'}}><span style={{color:'red', fontWeight:'300'}}>Winter Collection -50% OFF</span></h6>
     <img src="/assets/offer2.png" alt="" />
     </div>
     </div>

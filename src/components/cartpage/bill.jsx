@@ -28,12 +28,12 @@ export function Invoice() {
         <div className="header">
           <div className="mainContent">
           <div className="BrandName">
-            <h2>EUROPIAN FASHION</h2>
+            <img src="/assets/storeYellow2.png" alt="" />
           </div>
           </div>
           <div className="secondaryContent">
           <div className="shop-info">
-            <h4>UEROPIANFASHION PRIVATE LIMITED</h4>
+            <h4 style={{fontSize:'10px'}}>UEROPIANFASHION PRIVATE LIMITED</h4>
             <p>Phone: +1234567890</p>
             <p>Invoice #INV-001</p>
             <p>{formattedDate}</p>
@@ -48,7 +48,7 @@ export function Invoice() {
           </div>
         </div>
         <table className="itemized-list">
-          <thead>
+          <thead style={{textAlign:'center'}}>
             <tr>
               <th>SI NO</th>
               <th>PRODUCT</th>

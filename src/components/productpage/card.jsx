@@ -12,7 +12,7 @@ export function Card(props) {
 
   const ogText = props.item.description;
   const Trnct = ogText;
-  const price = props.item.price;
+  const price = props.item.price*10;
   const Image = props.item.images;
   const Id = props.item.id;
   let isAvailable = false;
@@ -146,7 +146,7 @@ export function Card(props) {
               />
             </svg>
           </div>
-          <div className="price">{price}0/-</div>
+          <div className="price">{price}/-</div>
         </div>
         <div className="buttonOnly">
           <button
