@@ -53,6 +53,10 @@ a {
   font-size: clamp(8px, 3vw, 15px);
   width: 21vw;
 }
+.mainname img {
+  width: 140px;
+  height: 40px;
+}
 @media screen and (max-width: 576px) {
   .switches {
     font-size: 9px;
@@ -60,5 +64,13 @@ a {
   }
   .navbar button {
     font-size: 10px;
+  }
+  .mainname{
+    padding-left: 10px;
+    width: 27vw;
+  }
+  .mainname img{
+    width: 80px;
+    height: 25px;
   }
 }
