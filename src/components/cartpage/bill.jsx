@@ -22,7 +22,7 @@ export function Invoice() {
     <div className="billContainer">
     {addressArray.length === 0 ? (
       <div className="notFount">
-        <img src="https://img.freepik.com/free-vector/404-error-with-landscape-concept-illustration_114360-7888.jpg?w=740&t=st=1712047745~exp=1712048345~hmac=8a8678e9cfae11b803b1be9f7fa86f0f3f85e785de0ecf8b47ed9befeff36042" alt="" />
+        <img src="https://img.freepik.com/free-vector/warning-concept-illustration_114360-1551.jpg?t=st=1712051682~exp=1712055282~hmac=896cb2dafb51f1946ade5b58c5316d3ee6f53f75d512eb59e0d688e13a24edbf&w=740" alt="" />
         <h3 style={{fontSize:'clamp(12px, 1.7vw, 24px)'}}>Please Select a Product First ...!</h3>
         <Link to="/product"><button type="button" class="btn btn-warning">Go to Products</button></Link>
       </div>
@@ -36,7 +36,7 @@ export function Invoice() {
             </div>
             <div className="secondaryContent">
               <div className="shop-info">
-                <h4 style={{fontSize:'10px'}}>UEROPIANFASHION PRIVATE LIMITED</h4>
+                <h4 style={{fontSize:'clamp(10px, 1.3vw, 17px)'}}>UEROPIANFASHION PRIVATE LIMITED</h4>
                 <p>Phone: +1234567890</p>
                 <p>Invoice #INV-001</p>
                 <p>{formattedDate}</p>
@@ -77,7 +77,7 @@ export function Invoice() {
           <div className="total">
             <p>Price : {(totalAmount).toFixed(2)}</p>
             <p>Discount : {(totalAmount/10).toFixed(2)}</p>
-            <p><span>Total Amount : {(totalAmount - totalAmount / 10).toFixed(2)}</span></p>
+            <p style={{marginTop:'7px'}}><span>Total Amount : {(totalAmount - totalAmount / 10).toFixed(2)}</span></p>
           </div>
           <div className="Thanks">
             <div className="thanksText">Thank you for Choosing us </div>

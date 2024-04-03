@@ -47,6 +47,8 @@ a {
   padding-right: clamp(10px, 4vw, 60px);
   font-size: clamp(10px, 4vw, 17px);
   font-weight: 700;
+  height: 100%;
+  align-items: center;
 }
 .mainname {
   padding-left: 25px;
@@ -56,6 +58,10 @@ a {
 .mainname img {
   width: 140px;
   height: 40px;
+}
+.switches .active{
+  border-bottom: 2px solid #ffc107;
+  color: #ffc107;
 }
 @media screen and (max-width: 576px) {
   .switches {
@@ -70,7 +76,7 @@ a {
     width: 27vw;
   }
   .mainname img{
-    width: 90px;
+    width: 80px;
     height: 30px;
   }
 }

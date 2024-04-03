@@ -1,5 +1,5 @@
 import React, { createContext, useState } from "react";
-import { Route, Routes } from "react-router-dom";
+import { Navigate, Route, Routes} from "react-router-dom";
 import "./App.css";
 import { Maincart } from "./components/cartpage/maincart";
 import { Content } from "./components/homepage/content";
@@ -8,6 +8,7 @@ import { Mainproduct } from "./components/productpage/mainproduct";
 import { View } from "./components/productpage/view";
 import { Address } from "./components/cartpage/address";
 import { Invoice } from "./components/cartpage/bill";
+import About from "./components/aboutpage/about";
 
 export const MyContext = createContext();
 
@@ -31,10 +32,11 @@ function App() {
         <div className="containerMain">
           <Navbar />
           <Routes>
+          <Route path="/" element={<Navigate to="/home" replace />} />
             <Route path="home" element={<Content />} />
             <Route path="/product" element={<Mainproduct />} />
             <Route path="cart" element={<Maincart />} />
-            <Route path="about" element={<Content />} />
+            <Route path="about" element={<About />} />
             <Route path="view/:cardId" element={<View />} />
             <Route path="cart/address" element={<Address />} />
             <Route path="cart/address/invoice" element={<Invoice />} />

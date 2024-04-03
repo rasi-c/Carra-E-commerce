@@ -172,9 +172,9 @@ export function Content({ showProductPage }) {
           <h2 style={{ textAlign: "center" }}>
             Up to <span>70% off </span>- all t-shirts & Accessories
           </h2>
-          <button type="button" class="btn btn-light">
+          <Link to="/product"><button type="button" class="btn btn-light">
             Explore More
-          </button>
+          </button></Link>
         </div>
         <div
           style={{ padding: "50px 0px" }}
@@ -300,7 +300,7 @@ export function Content({ showProductPage }) {
           <h5 style={{fontWeight:'400'}}>spring / summer</h5>
           <h2>buy 1 get 1 free</h2>
           <h6 style={{fontWeight:'200'}}>The best classic dress is on sale</h6>
-          <button type="button" style={{color:'white'}} class="btn btn-outline-success" >Collection</button>
+          <Link to="/product"><button type="button" style={{color:'white'}} class="btn btn-success" >Collection</button></Link>
         </div>
         <div className="secondAd">
           <h2 style={{color:'white'}}>SEASONAL SALE</h2>
@@ -349,8 +349,8 @@ export function Content({ showProductPage }) {
             <h5>Install App</h5>
             <h6>From Apple Store or Google Play</h6>
             <div className="appleGoogle">
-              <div className="appleStore w-50 "></div>
-              <div className="playStore w-50 "></div>
+              <div className="appleStore"></div>
+              <div className="playStore"></div>
             </div>
             <h6>Secured Payment Gateways</h6>
             <div className="gateway"></div>

@@ -279,6 +279,9 @@
 .section1,.section4{
   width: 70%;
 }
+.section1 h6, .section4 h6{
+  color: black;
+}
 .flipLogo{
   width: 100%;
   background-image: url(/public/assets/flipLogo.png);
@@ -292,27 +295,29 @@
   width: 100%;
   height: 50px;
   display: flex;
+  padding-left: 30px;
 }
 .appleStore{
-  background-image: url(/public/assets/app.jpg);
-  background-size: cover;
+  background-image: url(/public/assets/appStore.png);
+  background-size: contain;
   background-repeat: no-repeat;
   height: 100%;
+  width: 50%;
 }
 .playStore{
-  background-image: url(/public/assets/play.jpg);
-  background-size: cover;
+  background-image: url(/public/assets/playStore.png);
+  background-size: contain;
   background-repeat: no-repeat;
   height: 100%;
+  width: 50%;
 }
 .gateway{
   width: 100%;
   height: 40px;
-  margin-left: 20px;
-  background-image: url(/public/assets/pay.png);
+  background-image: url(/public/assets/creditCard.png);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain;
+  background-size: 100%;
 }
 .copyRight{
   width: 100%;
@@ -397,5 +402,11 @@
   }
   .copyRight{
     font-size: 12px;
+  }
+  .appleGoogle{
+    justify-content: space-around;
+  }
+  .appleStore,.playStore{
+    width: 40%;
   }
 }

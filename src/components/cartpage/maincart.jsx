@@ -8,6 +8,10 @@ export function Maincart() {
   const navigate = useNavigate();
   const latestArray = useContext(MyContext);
   const [rate, setrate] = useState(0);
+  const [date, setDate] = useState("none");
+  const currentDate = new Date();
+  const options = { day: "2-digit", month: "short", year: "numeric" };
+  const formattedDate = currentDate.toLocaleDateString("en-US", options);
   function checkArray() {
     if (latestArray.selectedOption === null) {
       navigate("address");
@@ -23,7 +27,9 @@ export function Maincart() {
           <span className="countGrey">{latestArray.cart.length} items</span>
         </div>
         {latestArray.cart.length === 0 ? (
-          <div className="emptyCart">Cart is empty</div>
+          <div className="emptyCart">Cart is empty , Please Select a Product First ...!
+        <Link to="/product"><button type="button" class="btn btn-warning">Go to Products</button></Link>
+          </div>
         ) : (
           latestArray.cart.map((item1, index) => {
             return <Cart item={item1} setkey={setrate} key={index} />;
@@ -55,8 +61,8 @@ export function Maincart() {
             <div className="amount"> ₹ {(rate - rate / 10).toFixed(2)}</div>
           </div>
           <div className="deliverydate">
-            <div>Estimated Deivery by</div>
-            <div className="dateDiv">01 MAY 2024</div>
+            <div>Estimated Delivery by</div>
+            <div className="dateDiv">{date}</div>
           </div>
           <div className="buttons">
             <Link to="address">

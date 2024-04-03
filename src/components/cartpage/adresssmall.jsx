@@ -81,7 +81,7 @@ export function AddressDetails(prop) {
         </div>
       ))}
       {addressArray.cart1.length <= 0 ? (
-          <div className="noAddress">No valid Address , Please Create New</div>
+          <div className="noAddress">No Addresses , Please Create New</div>
         ) : (
           <button className="billButton" onClick={()=> showBill()}>Proceed to Bill</button> 
         )}
