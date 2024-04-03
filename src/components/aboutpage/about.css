@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap");
+
 .aboutContainer{
     width: 100%;
     min-height: 100vh;
@@ -17,30 +19,55 @@
 }
 .weAreContainer{
     width: 100%;
-    height: 400px;
     display: flex;
 }
 .imageBox{
     width: 50%;
-    height: 100%;
+    height: auto;
     background-color: #f0f0f0;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .imageBox img{
-    width: 65%;
+    width: 70%;
     height: 80%;
+    border-radius: 15px;
 }
 .textBox{
     width: 50%;
-    height: 100%;
+    height: auto;
     background-color: #f0f0f0;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 0px 50px;
+    padding: 50px 5%;
     text-align: justify;
     gap: 10px;
+}
+.textBox h1{
+    font-family: "League Spartan", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+.fifthContainer{
+    padding-top: 0;
+}
+@media screen and (max-width: 700px) {
+    .weAreContainer{
+        flex-wrap: wrap;
+    }
+    .imageBox,.textBox{
+        width: 100%;
+    }
+    .imageBox img{
+        width: 90%;
+    }
+    .textBox{
+        justify-content: flex-start;
+    }
+    .KnowUs{
+        height: 150px;
+    }
 }
