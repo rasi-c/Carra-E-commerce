@@ -82,6 +82,9 @@
   }
   @media screen and (max-width: 500px) {
     .carousel-item img{
-      width: 7rem;
+      width: 4rem;
+    }
+    .carousel-inner{
+      height: 150px;
     }
   }

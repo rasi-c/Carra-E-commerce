@@ -61,7 +61,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    padding-left: 50px;
+    padding-left: 7%;
 }
 .locationBox{
     width: 50%;
@@ -72,6 +72,10 @@
 }
 .map{
     width: 100% !important;
+}
+iframe{
+    width: 90%;
+    height: 400px;
 }
 .fifthContainer{
     padding-top: 0;
@@ -91,5 +95,22 @@
     }
     .KnowUs{
         height: 150px;
+    }
+    .locationContainer{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .adressBox,.locationBox{
+        width: 100%;
+    }
+    iframe{
+        width: 100%;
+        height: 300px;
+    }
+    .adressBox{
+        padding-left: 25px;
+        padding-right: 30px;
+        padding-top: 50px;
+        gap: 8px;
     }
 }

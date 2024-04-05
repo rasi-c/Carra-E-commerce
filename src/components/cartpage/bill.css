@@ -23,14 +23,14 @@
 .mainContent {
   width: 100%;
   height: 90px;
-  background-color: #3aa39fad;
+  background-color: #2196f378;
   padding-left: 30px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
 }
 .mainContent img {
-  width: 45%;
+  width: 25%;
 }
 .secondaryContent {
   width: 100%;
@@ -98,7 +98,7 @@
   flex-direction: column;
 }
 .thanksText {
-  background-color: #3aa39fad;
+  background-color:#2196f378;
   height: 70%;
   width: 80%;
   display: flex;
@@ -150,5 +150,11 @@ tbody {
   }
   .notFount img{
    height: 17rem;
+  }
+  .mainContent img {
+    width: 40%;
+  }
+  .mainContent{
+    padding-left: 10px;
   }
 }

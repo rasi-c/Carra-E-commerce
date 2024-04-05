@@ -31,7 +31,7 @@ export function Invoice() {
           <div className="header">
             <div className="mainContent">
               <div className="BrandName">
-                <img src="/assets/storeYellow2.png" alt="" />
+                <img src="/assets/logoLast.png" alt="" />
               </div>
             </div>
             <div className="secondaryContent">

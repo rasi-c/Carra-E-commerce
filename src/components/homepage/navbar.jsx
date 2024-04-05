@@ -5,7 +5,7 @@ export function Navbar({ onClickTab = () => {} }) {
   return (
     <div className="navbar">
       <div className="mainname">
-        <img src="/assets/storeYellow.png" alt="" />
+        <img src="/assets/logoLast.png" alt="" />
       </div>
       <div className="switches">
         <div className="home">

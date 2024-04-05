@@ -17,7 +17,7 @@ a {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-style: normal;
-  z-index: 2;
+  z-index: 10;
   /* overflow: visible; */
   box-shadow: 0px -5px 8px grey;
 }
@@ -57,7 +57,7 @@ a {
 }
 .mainname img {
   width: 140px;
-  height: 40px;
+  height: 60px;
 }
 .switches .active{
   border-bottom: 2px solid #ffc107;
@@ -77,6 +77,6 @@ a {
   }
   .mainname img{
     width: 80px;
-    height: 30px;
+    height: 40px;
   }
 }

@@ -15,7 +15,6 @@
 }
 .secContainer {
   width: 50%;
-  /* height: 100%; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -59,15 +58,12 @@ option {
   font-size: clamp(12px, 1.5vw, 17px);
 }
 input {
-  /* width: 300px; */
   height: 30px;
   background-color: #f3f3f3;
   border: none;
   outline: none;
   padding: 10px 20px;
   border-radius: 10px;
-  /* box-shadow: inset -4px -4px 8px rgba(255, 255, 255, 0.5),
-              inset 4px 4px 8px rgba(0, 0, 0, 0.1); */
   font-size: 16px;
 }
 textarea {
@@ -77,8 +73,6 @@ textarea {
   outline: none;
   padding: 10px 20px;
   border-radius: 10px;
-  /* box-shadow: inset -4px -4px 8px rgba(255, 255, 255, 0.5),
-              inset 4px 4px 8px rgba(0, 0, 0, 0.1); */
   font-size: 16px;
 }
 select,
@@ -88,8 +82,6 @@ option {
   outline: none;
   padding: 10px 20px;
   border-radius: 10px;
-  /* box-shadow: inset -4px -4px 8px rgba(255, 255, 255, 0.5),
-              inset 4px 4px 8px rgba(0, 0, 0, 0.1); */
   font-size: 16px;
 }
 .subBtn {
@@ -134,17 +126,18 @@ option {
 }
 @media screen and (max-width: 600px) {
   .addressContainer {
-    /* flex-wrap: wrap; */
     flex-direction: column-reverse;
     position: relative;
   }
   .formContainer {
     width: 100%;
-    /* margin-top: 70px; */
   }
   .secContainer {
     width: 100%;
     padding-top: 100px;
+  }
+  .addressMain{
+    padding-top: 20px;
   }
   form {
     width: 80%;

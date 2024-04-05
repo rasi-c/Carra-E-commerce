@@ -64,7 +64,7 @@ export function Mainproduct() {
     <div className="carasoulContainer" style={{color:'black'}}>
       <h6 style={{fontWeight:'300', fontSize:'1.2rem'}}>crazy deals</h6>
       <h1 style={{fontWeight:'400'}}>#stayhome</h1>
-      <h6 style={{fontWeight:'300', fontSize:'1.2rem'}}>Save more with coupons & up to <span style={{color:'red'}}>70% off!</span></h6>
+      <h6 style={{fontWeight:'300', fontSize:'1.2rem', textAlign:'center'}}>Save more with coupons & up to <span style={{color:'red'}}>70% off!</span></h6>
       </div>
     </div>
     <div className="carousel-item">

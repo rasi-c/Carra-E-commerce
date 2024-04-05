@@ -101,7 +101,7 @@ export function Address() {
           <label htmlFor="">Phone No :</label>
           <input
             value={phoneNO}
-            type="tel"
+            type="number"
             onChange={(event) => setPhoneNo(event.target.value)}
             required
           />
