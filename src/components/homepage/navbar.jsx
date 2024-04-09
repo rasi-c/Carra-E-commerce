@@ -8,7 +8,7 @@ export function Navbar({ onClickTab = () => {} }) {
   return (
     <div className="navbar">
       <div className="mainname">
-        <img src="/assets/logoLast.png" alt="" />
+        <img src="/assets/logo.png" alt="" />
       </div>
       <div className="switches">
         <div className="home">

@@ -30,7 +30,7 @@
   justify-content: flex-start;
 }
 .mainContent img {
-  width: 25%;
+  width: 140%;
 }
 .secondaryContent {
   width: 100%;
@@ -152,7 +152,7 @@ tbody {
    height: 17rem;
   }
   .mainContent img {
-    width: 40%;
+    width: 80%;
   }
   .mainContent{
     padding-left: 10px;

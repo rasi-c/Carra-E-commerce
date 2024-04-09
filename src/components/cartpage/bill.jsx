@@ -31,12 +31,12 @@ export function Invoice() {
           <div className="header">
             <div className="mainContent">
               <div className="BrandName">
-                <img src="/assets/logoLast.png" alt="" />
+                <img src="/assets/logo.png" alt="" />
               </div>
             </div>
             <div className="secondaryContent">
               <div className="shop-info">
-                <h4 style={{fontSize:'clamp(10px, 1.3vw, 17px)'}}>UEROPIANFASHION PRIVATE LIMITED</h4>
+                <h4 style={{fontSize:'clamp(10px, 1.3vw, 17px)'}}>CARA PRIVATE LIMITED</h4>
                 <p>Phone: +1234567890</p>
                 <p>Invoice #INV-001</p>
                 <p>{formattedDate}</p>
@@ -81,7 +81,7 @@ export function Invoice() {
           </div>
           <div className="Thanks">
             <div className="thanksText">Thank you for Choosing us </div>
-            <div className="com">Www.europianfashion.com</div>
+            <div className="com">www.carafashion.com</div>
           </div>
         </div>
     )}
