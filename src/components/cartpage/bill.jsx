@@ -85,6 +85,7 @@ export function Invoice() {
           </div>
         </div>
     )}
+    <button type="submit">Download Bill</button>
      </div>
   );
   

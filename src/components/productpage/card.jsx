@@ -1,9 +1,12 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useContext, useEffect, useState} from "react";
+import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
 import { MyContext } from "../../App";
+import { decrement, increment } from "../redux/reduxCart";
 import "./card.css";
 
 export function Card(props) {
+  const dispatch = useDispatch();
   const [isAddedTocart, setIsAddedTocart] = useState(false);
   const myArray = useContext(MyContext);
   const newTitle = props.item.title;
@@ -23,10 +26,9 @@ export function Card(props) {
     let newPrice = price;
     let newImage = image;
     let newId = Id;
-    // let newisAvailable = isAvailable
     myArray.cart.forEach((element) => {
       if (element.newId === newId) {
-        isAvailable = true;
+        isAvailable = true;       
       }
     });
     if (isAvailable) {
@@ -36,6 +38,7 @@ export function Card(props) {
       });
       myArray.arrkey(newCart);
       console.log("id is available");
+      dispatch(decrement());
     } else {
       setIsAddedTocart(true);
       let myobj = {
@@ -47,6 +50,7 @@ export function Card(props) {
         isAvailable,
         quantity,
       };
+      dispatch(increment());
       myArray.cart.push(myobj);
       console.log("my obj", myobj);
     }
@@ -175,7 +179,6 @@ export function Card(props) {
                 <i class="bi bi-cart"></i>
               )}{" "}
             </span>
-            {/* <span className={`btn1__icon ${isAddedTocart?'btnicon':'btniconnot'} `}><svg xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24" stroke="currentColor" height="24" fill="none" className="svg"><line y2="19" y1="5" x2="12" x1="12"></line><line y2="12" y1="12" x2="19" x1="5"></line></svg></span> */}
           </button>
         </div>
       </div>

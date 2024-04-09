@@ -50,6 +50,21 @@ a {
   height: 100%;
   align-items: center;
 }
+.services{
+  position: relative;
+}
+.cartCount_Navbar{
+  width: 60%;
+  height: 60%;
+  position: absolute;
+  background-color: #F44336;
+  font-size: 70%;
+  border-radius: 50%;
+  right: -15px;
+  top: -5px;
+  color: white;
+  font-weight: 400;
+}
 .mainname {
   padding-left: 25px;
   font-size: clamp(8px, 3vw, 15px);
@@ -78,5 +93,9 @@ a {
   .mainname img{
     width: 80px;
     height: 40px;
+  }
+  .cartCount_Navbar{
+    right: -7px;
+    width: 48%;
   }
 }
