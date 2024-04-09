@@ -36,15 +36,17 @@ export function Navbar({ onClickTab = () => {} }) {
           </NavLink>
         </div>
         <div className="services">
-          <NavLink to="/cart">
-            <button onClick={() => onClickTab("cart")} activeClassName="active">
-              <i class="bi bi-bag"></i>
-              <div className="cartCount_Navbar">
-              {cartCount > 0 && cartCount}
-              </div>
-            </button>
-          </NavLink>
-        </div>
+      <NavLink to="/cart">
+        <button onClick={() => onClickTab("cart")} activeClassName="active">
+          <i className="bi bi-bag"></i>
+          {cartCount > 0 && 
+            <div className="cartCount_Navbar">
+              {cartCount}
+            </div>
+          }
+        </button>
+      </NavLink>
+    </div>
       </div>
     </div>
   );
