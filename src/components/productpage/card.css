@@ -14,11 +14,16 @@
   box-shadow: 20px 20px 30px rgb(0, 0, 0, 0.2);
   padding: 15px;
   border: 0.1px solid #0881793e;
-  justify-content: space-evenly;
+  justify-content: flex-start;
+  gap: 10px;
 }
 .card2 img{
   width: 100%;
   border-radius: 15px;
+}
+.card2 img:hover{
+  transform: scale(1.1); 
+  transition: transform 0.3s ease-in-out;
 }
 .heading {
   width: 100%;

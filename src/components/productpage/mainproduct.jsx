@@ -1,33 +1,35 @@
 import React from 'react'
 import { useState, useEffect } from 'react';
 import { Card } from './card';
+import jsonData from '../productjson/item.json'
 import './mainproduct.css'
 
 
 export function Mainproduct() {
   const [loading, setLoading] = useState(true);
-    const [product, setData] = useState([]);
+    const [product, setData] = useState();
     useEffect(() => {
-      const apiUrl = "https://api.escuelajs.co/api/v1/products?offset=0&limit=30";
-      fetch(apiUrl)
-        .then((response) => response.json())
-        .then((product) => {
-          setData(product);
-          setLoading(false); // Once data is fetched, set loading to false
-        })
-        .catch((error) => {
-          console.error("Error fetching data:", error);
-          setLoading(false); // If there's an error, also set loading to false
-        });
-    }, []);
+      // Simulate asynchronous behavior with setTimeout
+      const fetchData = () => {
+        setTimeout(() => {
+          setData(jsonData);
+          setLoading(false);
+        }, 1000); // Delay of 1 second to simulate fetching data
+      };
+  
+      fetchData(); // Call the fetchData function
+  
+      // Cleanup function (not necessary in this case)
+      return () => {
+        // Any cleanup code here (if needed)
+      };
+    }, []); // Empty dependency array to run the effect only once
+  
+    if (loading) {
+      return <div  className="spinner"></div>;
+    }
   return (
     <>
-    
-    
-    {loading ? (
-        <div className="spinner"></div>
-        // Display loading text if loading is true
-      ) : (
     <div className='maincontainer'>
      <div id="carouselExampleIndicators" className="carousel slide">
   <div className="carousel-indicators">
@@ -96,10 +98,11 @@ export function Mainproduct() {
 </div>
 
       { product.map((item,index) => {
+        console.log("item is", item);
         return <Card item={item} key={index}/>;
       })
     }</div>
-    )}
+ 
     </>
   )
 }

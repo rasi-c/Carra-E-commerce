@@ -1,0 +1,171 @@
+[
+    {
+      "product_name": "Grey white HM",
+      "id":1,
+      "images":[
+        "/assets/shirt3.jpg",
+        "/assets/shirt4.jpg",
+        "/assets/shirt5.jpg"
+      ],
+      "description": "This is a description of Product A.",
+      "rating": 4.5,
+      "company_name": "Company X",
+      "price": 390
+    },
+    {
+        "product_name": "Red Beach HM",
+        "id":2,
+        "images":[
+          "/assets/shirt4.jpg",
+          "/assets/shirt4.jpg",
+          "/assets/shirt5.jpg"
+        ],
+        "description": "This is a description of Product A.",
+        "rating": 4.5,
+        "company_name": "Company X",
+        "price": 490
+      },
+      {
+        "product_name": "Blue Beach HM",
+        "id":3,
+        "images":[
+          "/assets/shirt5.jpg",
+          "/assets/shirt4.jpg",
+          "/assets/shirt5.jpg"
+        ],
+        "description": "This is a description of Product A.",
+        "rating": 4.5,
+        "company_name": "Company X",
+        "price": 490
+      },
+      {
+        "product_name": "Black White Line",
+        "id":4,
+        "images":[
+          "/assets/shirt6.jpg",
+          "/assets/shirt4.jpg",
+          "/assets/shirt5.jpg"
+        ],
+        "description": "This is a description of Product A.",
+        "rating": 4.5,
+        "company_name": "Company X",
+        "price": 590
+      },
+      {
+        "product_name": "Cream White Line",
+        "id":5,
+        "images":[
+          "/assets/shirt7.jpg",
+          "/assets/shirt4.jpg",
+          "/assets/shirt5.jpg"
+        ],
+        "description": "This is a description of Product A.",
+        "rating": 4.5,
+        "company_name": "Company X",
+        "price": 990
+      },
+      {
+        "product_name": "White Single HM",
+        "id":6,
+        "images":[
+          "/assets/shirt8.jpg",
+          "/assets/shirt4.jpg",
+          "/assets/shirt5.jpg"
+        ],
+        "description": "This is a description of Product A.",
+        "rating": 4.5,
+        "company_name": "Company X",
+        "price": 790
+      },
+      {
+        "product_name": "Sea Violet HM",
+        "id":7,
+        "images":[
+          "/assets/shirt9.jpg",
+          "/assets/shirt4.jpg",
+          "/assets/shirt5.jpg"
+        ],
+        "description": "This is a description of Product A.",
+        "rating": 4.5,
+        "company_name": "Company X",
+        "price": 490
+      },
+      {
+        "product_name": "Light Blue Single",
+        "id":8,
+        "images":[
+          "/assets/shirt10.jpg",
+          "/assets/shirt4.jpg",
+          "/assets/shirt5.jpg"
+        ],
+        "description": "This is a description of Product A.",
+        "rating": 4.5,
+        "company_name": "Company X",
+        "price": 490
+      },
+      {
+        "product_name": "Ocean Blue HM",
+        "id":9,
+        "images":[
+          "/assets/shirt11.jpg",
+          "/assets/shirt4.jpg",
+          "/assets/shirt5.jpg"
+        ],
+        "description": "This is a description of Product A.",
+        "rating": 4.5,
+        "company_name": "Company X",
+        "price": 990
+      },
+      {
+        "product_name": "Dynamic Pink HM",
+        "id":10,
+        "images":[
+          "/assets/shirt12.jpg",
+          "/assets/shirt4.jpg",
+          "/assets/shirt5.jpg"
+        ],
+        "description": "This is a description of Product A.",
+        "rating": 4.5,
+        "company_name": "Company X",
+        "price": 890
+      },
+      {
+        "product_name": "Sharp Blue Line",
+        "id":11,
+        "images":[
+          "/assets/shirt13.jpg",
+          "/assets/shirt4.jpg",
+          "/assets/shirt5.jpg"
+        ],
+        "description": "This is a description of Product A.",
+        "rating": 4.5,
+        "company_name": "Company X",
+        "price": 1290
+      },
+      {
+        "product_name": "Dyno Tree HM",
+        "id":12,
+        "images":[
+          "/assets/shirt2.jpeg",
+          "/assets/shirt4.jpg",
+          "/assets/shirt5.jpg"
+        ],
+        "description": "This is a description of Product A.",
+        "rating": 4.5,
+        "company_name": "Company X",
+        "price": 1290
+      },
+      {
+        "product_name": "Diamond Dot HM",
+        "id":13,
+        "images":[
+          "/assets/shirt1.jpg",
+          "/assets/shirt4.jpg",
+          "/assets/shirt5.jpg"
+        ],
+        "description": "This is a description of Product A.",
+        "rating": 4.5,
+        "company_name": "Company X",
+        "price": 290
+      } 
+  ]

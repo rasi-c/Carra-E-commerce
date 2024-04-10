@@ -12,6 +12,17 @@ export function Content({ showProductPage }) {
     "/assets/f6.jpg",
     "/assets/f8.jpg",
     "/assets/n5.jpg",
+    "/assets/shirt2.jpeg",
+    "/assets/shirt4.jpg",
+    "/assets/shirt5.jpg",
+    "/assets/shirt6.jpg",
+    "/assets/shirt7.jpg",
+    "/assets/shirt8.jpg",
+    "/assets/shirt9.jpg",
+    "/assets/shirt10.jpg",
+    "/assets/shirt11.jpg",
+    "/assets/shirt12.jpg",
+    "/assets/shirt13.jpg",
   ];
   const imageArraySecond = [
     "/assets/n1.jpg",

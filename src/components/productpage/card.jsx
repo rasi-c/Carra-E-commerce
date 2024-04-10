@@ -9,14 +9,12 @@ export function Card(props) {
   const dispatch = useDispatch();
   const [isAddedTocart, setIsAddedTocart] = useState(false);
   const myArray = useContext(MyContext);
-  const newTitle = props.item.title;
-  const newTitleArray = newTitle.split(" ");
-  const slicedTitle = newTitleArray.splice(0, 3).join(" ");
+  const newTitle = props.item.product_name;
 
   const ogText = props.item.description;
   const Trnct = ogText;
-  const price = props.item.price*10;
-  const Image = props.item.images;
+  const price = props.item.price;
+  const Image = props.item.images[0];
   const Id = props.item.id;
   let isAvailable = false;
   let quantity = 1;
@@ -74,8 +72,8 @@ export function Card(props) {
       <Link to={`/view/${props.item.id}`}>
         <img src={props.item.images[0]} alt="" />
       </Link>
-      <div className="brandName">Adidas</div>
-      <div className="heading">{slicedTitle}</div>
+      <div className="brandName">{props.item.company_name}</div>
+      <div className="heading">{newTitle}</div>
       <div className="rateAndButton">
         <div className="starAndRate">
           <div className="stars">
@@ -162,7 +160,7 @@ export function Card(props) {
             } `}
             onClick={() =>
               AddCart(
-                slicedTitle,
+                newTitle,
                 Trnct,
                 price,
                 Image,
