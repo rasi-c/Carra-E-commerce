@@ -409,4 +409,10 @@
   .appleStore,.playStore{
     width: 40%;
   }
+  .mainpgBtn{
+    margin-bottom: 30px;
+  }
+  .secondHeader{
+    padding-top: 20px;
+  }
 }

@@ -56,24 +56,24 @@ export function Mainproduct() {
   </div>
   <div className="carousel-inner">
     <div className="carousel-item active">
-      <div className="carasoulContainer" style={{color:'black', background:"url(https://img.freepik.com/free-photo/black-friday-elements-assortment_23-2149074076.jpg?t=st=1712802749~exp=1712806349~hmac=1302417c87fda46d775e75771ed840cae677c67a2e969a6659780c6b168e7737&w=1380)", backgroundPosition:'stretch', backgroundSize:'cover', backgroundRepeat:'no-repeat'}}>
+      <div className="carasoulContainer" style={{color:'black', background:"url(https://img.freepik.com/free-photo/black-friday-elements-assortment_23-2149074076.jpg?t=st=1712802749~exp=1712806349~hmac=1302417c87fda46d775e75771ed840cae677c67a2e969a6659780c6b168e7737&w=1380)", backgroundPosition:'center', backgroundSize:'cover', backgroundRepeat:'no-repeat'}}>
       <h1>buy 1 get <span style={{color:'red'}}>1 free</span></h1>
       <h6 style={{fontWeight:'300', fontSize:'1.2rem'}}>The best classic dress is on sale</h6>
       <img src="/assets/offer.png" alt="" />
       </div>
     </div>
     <div className="carousel-item">
-    <div className="carasoulContainer" style={{color:'black', background:"url(https://img.freepik.com/free-photo/excited-girl-scream-joy-making-fist-pump-holding-shopping-bag-rejoicing-standing-dress-ove_1258-120529.jpg?t=st=1712802309~exp=1712805909~hmac=ead0bbb9cf4d882e6bc5218e633759ab39e0fadf422ed6267d3d75d884120994&w=1380)", backgroundPosition:'stretch', backgroundSize:'cover'}}>
+    <div className="carasoulContainer" style={{color:'black', background:"url(https://img.freepik.com/free-photo/excited-girl-scream-joy-making-fist-pump-holding-shopping-bag-rejoicing-standing-dress-ove_1258-120529.jpg?t=st=1712802309~exp=1712805909~hmac=ead0bbb9cf4d882e6bc5218e633759ab39e0fadf422ed6267d3d75d884120994&w=1380)", backgroundPosition:'top', backgroundSize:'cover'}}>
       <h6 style={{fontWeight:'300', fontSize:'1.2rem'}}>crazy deals</h6>
       <h1 style={{fontWeight:'400'}}>#stayhome</h1>
       <h6 style={{fontWeight:'300', fontSize:'1.2rem', textAlign:'center'}}>Save more with coupons & up to <span style={{color:'red'}}>70% off!</span></h6>
+      <img src="/assets/offer2.png" alt="" />
       </div>
     </div>
     <div className="carousel-item">
     <div className="carasoulContainer" style={{color:'black', background:"url(https://img.freepik.com/free-photo/front-view-woman-with-shopping-bag-concept_23-2148674158.jpg?t=st=1712793690~exp=1712797290~hmac=0303aa102957c9aef495653ea70f42ee7cebbdb00be9f11d515955903632855a&w=1380)", backgroundPosition:'center', backgroundSize:'cover'}}>
     <h1>SEASONAL SALE</h1>
     <h6 style={{fontSize:'1.2rem'}}><span style={{color:'red', fontWeight:'300'}}>Winter Collection -50% OFF</span></h6>
-    <img src="/assets/offer2.png" alt="" />
     </div>
     </div>
   </div>

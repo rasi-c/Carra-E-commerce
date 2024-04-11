@@ -1,26 +1,30 @@
 [
-    {
-      "product_name": "Grey white HM",
-      "id":1,
-      "images":[
-        "/assets/shirt3.jpg",
-        "/assets/shirt4.jpg",
-        "/assets/shirt5.jpg"
-      ],
-      "description": "This is a description of Product A.",
-      "rating": 4.5,
-      "company_name": "ARROW",
-      "price": 390
-    },
+  {
+    "product_name": "Grey white HM",
+    "id":1,
+    "images":[
+      "/assets/shirt3.jpg",
+      "/assets/shirt31.jpg",
+      "/assets/shirt32.jpg",
+      "/assets/shirt33.jpg"
+    ],
+    "description": "Indulge in effortless sophistication with our Shirt, a timeless essential that seamlessly blends comfort and style. Crafted from premium, breathable fabric, this shirt is designed to keep you feeling cool and confident all day long.Our commitment to quality shines through in every stitch. Made from premium materials and expert craftsmanship, our shirt promises durability and long-lasting wear, ensuring it remains a staple piece in your collection for years to come.",
+    "catogory":"Men Shirt",
+    "rating": 3.9,
+    "company_name": "ARROW",
+    "price": 390
+  },
     {
         "product_name": "Red Beach HM",
         "id":2,
         "images":[
           "/assets/shirt4.jpg",
-          "/assets/shirt4.jpg",
-          "/assets/shirt5.jpg"
+          "/assets/shirt41.jpg",
+          "/assets/shirt42.jpg",
+          "/assets/shirt43.jpg"
         ],
-        "description": "This is a description of Product A.",
+        "description": "Indulge in effortless sophistication with our Shirt, a timeless essential that seamlessly blends comfort and style. Crafted from premium, breathable fabric, this shirt is designed to keep you feeling cool and confident all day long.Our commitment to quality shines through in every stitch. Made from premium materials and expert craftsmanship, our shirt promises durability and long-lasting wear, ensuring it remains a staple piece in your collection for years to come.",
+        "catogory":"Men Shirt",
         "rating": 4.5,
         "company_name": "ALLLENSOLLY",
         "price": 490
@@ -30,11 +34,13 @@
         "id":3,
         "images":[
           "/assets/shirt5.jpg",
-          "/assets/shirt4.jpg",
-          "/assets/shirt5.jpg"
+          "/assets/shirt51.jpg",
+          "/assets/shirt52.jpg",
+          "/assets/shirt53.jpg"
         ],
-        "description": "This is a description of Product A.",
-        "rating": 4.5,
+        "description": "Indulge in effortless sophistication with our Shirt, a timeless essential that seamlessly blends comfort and style. Crafted from premium, breathable fabric, this shirt is designed to keep you feeling cool and confident all day long.Our commitment to quality shines through in every stitch. Made from premium materials and expert craftsmanship, our shirt promises durability and long-lasting wear, ensuring it remains a staple piece in your collection for years to come.",
+        "catogory":"Men Shirt",
+        "rating": 4.7,
         "company_name": "TOMMY HILFIGER",
         "price": 490
       },
@@ -43,11 +49,13 @@
         "id":4,
         "images":[
           "/assets/shirt6.jpg",
-          "/assets/shirt4.jpg",
-          "/assets/shirt5.jpg"
+          "/assets/shirt61.jpg",
+          "/assets/shirt62.jpg",
+          "/assets/shirt63.jpg"
         ],
-        "description": "This is a description of Product A.",
-        "rating": 4.5,
+        "description": "Indulge in effortless sophistication with our Shirt, a timeless essential that seamlessly blends comfort and style. Crafted from premium, breathable fabric, this shirt is designed to keep you feeling cool and confident all day long.Our commitment to quality shines through in every stitch. Made from premium materials and expert craftsmanship, our shirt promises durability and long-lasting wear, ensuring it remains a staple piece in your collection for years to come.",
+        "catogory":"Men Shirt",
+        "rating": 4.9,
         "company_name": "ALLLENSOLLY",
         "price": 590
       },
@@ -56,11 +64,13 @@
         "id":5,
         "images":[
           "/assets/shirt7.jpg",
-          "/assets/shirt4.jpg",
-          "/assets/shirt5.jpg"
+          "/assets/shirt71.jpg",
+          "/assets/shirt72.jpg",
+          "/assets/shirt73.jpg"
         ],
-        "description": "This is a description of Product A.",
-        "rating": 4.5,
+        "description": "Indulge in effortless sophistication with our Shirt, a timeless essential that seamlessly blends comfort and style. Crafted from premium, breathable fabric, this shirt is designed to keep you feeling cool and confident all day long.Our commitment to quality shines through in every stitch. Made from premium materials and expert craftsmanship, our shirt promises durability and long-lasting wear, ensuring it remains a staple piece in your collection for years to come.",
+        "catogory":"Men Shirt",
+        "rating": 4.2,
         "company_name": "RAYMOND",
         "price": 990
       },
@@ -69,11 +79,13 @@
         "id":6,
         "images":[
           "/assets/shirt8.jpg",
-          "/assets/shirt4.jpg",
-          "/assets/shirt5.jpg"
+          "/assets/shirt81.jpg",
+          "/assets/shirt82.jpg",
+          "/assets/shirt83.jpg"
         ],
-        "description": "This is a description of Product A.",
-        "rating": 4.5,
+        "description": "Indulge in effortless sophistication with our Shirt, a timeless essential that seamlessly blends comfort and style. Crafted from premium, breathable fabric, this shirt is designed to keep you feeling cool and confident all day long.Our commitment to quality shines through in every stitch. Made from premium materials and expert craftsmanship, our shirt promises durability and long-lasting wear, ensuring it remains a staple piece in your collection for years to come.",
+        "catogory":"Men Shirt",
+        "rating": 3.5,
         "company_name": "LOISE PHILIPPE",
         "price": 790
       },
@@ -82,11 +94,13 @@
         "id":7,
         "images":[
           "/assets/shirt9.jpg",
-          "/assets/shirt4.jpg",
-          "/assets/shirt5.jpg"
+          "/assets/shirt91.jpg",
+          "/assets/shirt92.jpg",
+          "/assets/shirt93.jpg"
         ],
-        "description": "This is a description of Product A.",
-        "rating": 4.5,
+        "description": "Indulge in effortless sophistication with our Shirt, a timeless essential that seamlessly blends comfort and style. Crafted from premium, breathable fabric, this shirt is designed to keep you feeling cool and confident all day long.Our commitment to quality shines through in every stitch. Made from premium materials and expert craftsmanship, our shirt promises durability and long-lasting wear, ensuring it remains a staple piece in your collection for years to come.",
+        "catogory":"Men Shirt",
+        "rating": 3.9,
         "company_name": "ARROW",
         "price": 490
       },
@@ -95,11 +109,13 @@
         "id":8,
         "images":[
           "/assets/shirt10.jpg",
-          "/assets/shirt4.jpg",
-          "/assets/shirt5.jpg"
+          "/assets/shirt101.jpg",
+          "/assets/shirt102.jpg",
+          "/assets/shirt103.jpg"
         ],
-        "description": "This is a description of Product A.",
-        "rating": 4.5,
+        "description": "Indulge in effortless sophistication with our Shirt, a timeless essential that seamlessly blends comfort and style. Crafted from premium, breathable fabric, this shirt is designed to keep you feeling cool and confident all day long.Our commitment to quality shines through in every stitch. Made from premium materials and expert craftsmanship, our shirt promises durability and long-lasting wear, ensuring it remains a staple piece in your collection for years to come.",
+        "catogory":"Men Shirt",
+        "rating": 4.6,
         "company_name": "BLACK BERRYS",
         "price": 490
       },
@@ -108,11 +124,13 @@
         "id":9,
         "images":[
           "/assets/shirt11.jpg",
-          "/assets/shirt4.jpg",
-          "/assets/shirt5.jpg"
+          "/assets/shirt111.jpg",
+          "/assets/shirt112.jpg",
+          "/assets/shirt113.jpg"
         ],
-        "description": "This is a description of Product A.",
-        "rating": 4.5,
+        "description": "Indulge in effortless sophistication with our Shirt, a timeless essential that seamlessly blends comfort and style. Crafted from premium, breathable fabric, this shirt is designed to keep you feeling cool and confident all day long.Our commitment to quality shines through in every stitch. Made from premium materials and expert craftsmanship, our shirt promises durability and long-lasting wear, ensuring it remains a staple piece in your collection for years to come.",
+        "catogory":"Men Shirt",
+        "rating": 4.6,
         "company_name": "PETER ENGLAND",
         "price": 990
       },
@@ -121,11 +139,13 @@
         "id":10,
         "images":[
           "/assets/shirt12.jpg",
-          "/assets/shirt4.jpg",
-          "/assets/shirt5.jpg"
+          "/assets/shirt121.jpg",
+          "/assets/shirt122.jpg",
+          "/assets/shirt123.jpg"
         ],
-        "description": "This is a description of Product A.",
-        "rating": 4.5,
+        "description": "Indulge in effortless sophistication with our Shirt, a timeless essential that seamlessly blends comfort and style. Crafted from premium, breathable fabric, this shirt is designed to keep you feeling cool and confident all day long.Our commitment to quality shines through in every stitch. Made from premium materials and expert craftsmanship, our shirt promises durability and long-lasting wear, ensuring it remains a staple piece in your collection for years to come.",
+        "catogory":"Men Shirt",
+        "rating": 4.8,
         "company_name": "PETER ENGLAND",
         "price": 890
       },
@@ -134,38 +154,149 @@
         "id":11,
         "images":[
           "/assets/shirt13.jpg",
-          "/assets/shirt4.jpg",
-          "/assets/shirt5.jpg"
+          "/assets/shirt131.jpg",
+          "/assets/shirt132.jpg",
+          "/assets/shirt133.jpg"
         ],
-        "description": "This is a description of Product A.",
-        "rating": 4.5,
+        "description": "Indulge in effortless sophistication with our Shirt, a timeless essential that seamlessly blends comfort and style. Crafted from premium, breathable fabric, this shirt is designed to keep you feeling cool and confident all day long.Our commitment to quality shines through in every stitch. Made from premium materials and expert craftsmanship, our shirt promises durability and long-lasting wear, ensuring it remains a staple piece in your collection for years to come.",
+        "catogory":"Men Shirt",
+        "rating": 4.0,
         "company_name": "LOISE PHILIPPE",
         "price": 1290
       },
       {
-        "product_name": "Dyno Tree HM",
+        "product_name": "Dyno White HM",
         "id":12,
         "images":[
-          "/assets/shirt2.jpeg",
-          "/assets/shirt4.jpg",
-          "/assets/shirt5.jpg"
+          "/assets/tshirt1.jpg",
+          "/assets/tshirt12.jpg",
+          "/assets/tshirt13.jpg",
+          "/assets/tshirt11.jpg"
         ],
-        "description": "This is a description of Product A.",
-        "rating": 4.5,
+        "description": "Indulge in effortless sophistication with our Shirt, a timeless essential that seamlessly blends comfort and style. Crafted from premium, breathable fabric, this shirt is designed to keep you feeling cool and confident all day long.Our commitment to quality shines through in every stitch. Made from premium materials and expert craftsmanship, our shirt promises durability and long-lasting wear, ensuring it remains a staple piece in your collection for years to come.",
+        "catogory":"T Shirt",
+        "rating": 3.7,
         "company_name": "RAYMOND",
         "price": 1290
       },
       {
-        "product_name": "Diamond Dot HM",
+        "product_name": "Diamond Blue HM",
         "id":13,
         "images":[
-          "/assets/shirt1.jpg",
-          "/assets/shirt4.jpg",
-          "/assets/shirt5.jpg"
+          "/assets/tshirt2.jpg",
+          "/assets/tshirt21.jpg",
+          "/assets/tshirt22.jpg",
+          "/assets/tshirt21.jpg"
         ],
-        "description": "This is a description of Product A.",
-        "rating": 4.5,
+        "description": "Indulge in effortless sophistication with our Shirt, a timeless essential that seamlessly blends comfort and style. Crafted from premium, breathable fabric, this shirt is designed to keep you feeling cool and confident all day long.Our commitment to quality shines through in every stitch. Made from premium materials and expert craftsmanship, our shirt promises durability and long-lasting wear, ensuring it remains a staple piece in your collection for years to come.",
+        "catogory":"T Shirt",
+        "rating": 3.2,
         "company_name": "BLACK BERRYS",
         "price": 290
-      } 
+      },
+      {
+        "product_name": "Demo Grey Slim",
+        "id":14,
+        "images":[
+          "/assets/tshirt3.jpg",
+          "/assets/tshirt31.jpg",
+          "/assets/tshirt32.jpg",
+          "/assets/tshirt31.jpg"
+        ],
+        "description": "Indulge in effortless sophistication with our Shirt, a timeless essential that seamlessly blends comfort and style. Crafted from premium, breathable fabric, this shirt is designed to keep you feeling cool and confident all day long.Our commitment to quality shines through in every stitch. Made from premium materials and expert craftsmanship, our shirt promises durability and long-lasting wear, ensuring it remains a staple piece in your collection for years to come.",
+        "catogory":"T Shirt",
+        "rating": 4.7,
+        "company_name": "LOUISE",
+        "price": 390
+      },
+      {
+        "product_name": "Demo Blue Slim",
+        "id":15,
+        "images":[
+          "/assets/tshirt4.jpg",
+          "/assets/tshirt41.jpg",
+          "/assets/tshirt42.jpg",
+          "/assets/tshirt43.jpg"
+        ],
+        "description": "Indulge in effortless sophistication with our Shirt, a timeless essential that seamlessly blends comfort and style. Crafted from premium, breathable fabric, this shirt is designed to keep you feeling cool and confident all day long.Our commitment to quality shines through in every stitch. Made from premium materials and expert craftsmanship, our shirt promises durability and long-lasting wear, ensuring it remains a staple piece in your collection for years to come.",
+        "catogory":"T Shirt",
+        "rating": 4.9,
+        "company_name": "BLACK BERRYS",
+        "price": 390
+      },
+      {
+        "product_name": "Black Hoodie HM",
+        "id":16,
+        "images":[
+          "/assets/hoodie1.jpg",
+          "/assets/hoodie11.jpg",
+          "/assets/hoodie12.jpg",
+          "/assets/hoodie13.jpg"
+        ],
+        "description": "Indulge in effortless sophistication with our Shirt, a timeless essential that seamlessly blends comfort and style. Crafted from premium, breathable fabric, this shirt is designed to keep you feeling cool and confident all day long.Our commitment to quality shines through in every stitch. Made from premium materials and expert craftsmanship, our shirt promises durability and long-lasting wear, ensuring it remains a staple piece in your collection for years to come.",
+        "catogory":"hoodie",
+        "rating": 4.9,
+        "company_name": "PETER ENGLAND",
+        "price": 990
+      },
+      {
+        "product_name": "Silver Hoodie",
+        "id":17,
+        "images":[
+          "/assets/hoodie2.jpg",
+          "/assets/hoodie21.jpg",
+          "/assets/hoodie22.jpg",
+          "/assets/hoodie23.jpg"
+        ],
+        "description": "Indulge in effortless sophistication with our Shirt, a timeless essential that seamlessly blends comfort and style. Crafted from premium, breathable fabric, this shirt is designed to keep you feeling cool and confident all day long.Our commitment to quality shines through in every stitch. Made from premium materials and expert craftsmanship, our shirt promises durability and long-lasting wear, ensuring it remains a staple piece in your collection for years to come.",
+        "catogory":"hoodie",
+        "rating": 2.9,
+        "company_name": "LOISE PHILIPPE",
+        "price": 7990
+      },
+      {
+        "product_name": "Deep Blue Hoodie",
+        "id":18,
+        "images":[
+          "/assets/hoodie3.jpg",
+          "/assets/hoodie31.jpg",
+          "/assets/hoodie32.jpg",
+          "/assets/hoodie33.jpg"
+        ],
+        "description": "Indulge in effortless sophistication with our Shirt, a timeless essential that seamlessly blends comfort and style. Crafted from premium, breathable fabric, this shirt is designed to keep you feeling cool and confident all day long.Our commitment to quality shines through in every stitch. Made from premium materials and expert craftsmanship, our shirt promises durability and long-lasting wear, ensuring it remains a staple piece in your collection for years to come.",
+        "catogory":"hoodie",
+        "rating": 4.2,
+        "company_name": "TOMMY HILFIGER",
+        "price": 990
+      },
+      {
+        "product_name": "Nebula Red Hoodie",
+        "id":19,
+        "images":[
+          "/assets/hoodie4.jpg",
+          "/assets/hoodie41.jpg",
+          "/assets/hoodie42.jpg",
+          "/assets/hoodie43.jpg"
+        ],
+        "description": "Indulge in effortless sophistication with our Shirt, a timeless essential that seamlessly blends comfort and style. Crafted from premium, breathable fabric, this shirt is designed to keep you feeling cool and confident all day long.Our commitment to quality shines through in every stitch. Made from premium materials and expert craftsmanship, our shirt promises durability and long-lasting wear, ensuring it remains a staple piece in your collection for years to come.",
+        "catogory":"hoodie",
+        "rating": 4.3,
+        "company_name": "BLACK BERRYS",
+        "price": 1190
+      },
+      {
+        "product_name": "Classic Hoodie HM",
+        "id":20,
+        "images":[
+          "/assets/hoodie5.jpg",
+          "/assets/hoodie51.jpg",
+          "/assets/hoodie52.jpg",
+          "/assets/hoodie53.jpg"
+        ],
+        "description": "Indulge in effortless sophistication with our Shirt, a timeless essential that seamlessly blends comfort and style. Crafted from premium, breathable fabric, this shirt is designed to keep you feeling cool and confident all day long.Our commitment to quality shines through in every stitch. Made from premium materials and expert craftsmanship, our shirt promises durability and long-lasting wear, ensuring it remains a staple piece in your collection for years to come.",
+        "catogory":"hoodie",
+        "rating": 3.9,
+        "company_name": "ARROW",
+        "price": 790
+      }
   ]

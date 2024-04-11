@@ -2,8 +2,8 @@
 @import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap");
 
 .card2 {
-  width: 250px;
-  height: 380px;
+  width: 280px;
+  height: 410px;
   background-color: white;
   border-radius: 20px;
   transition: all 0.2s;
@@ -21,10 +21,10 @@
   width: 100%;
   border-radius: 15px;
 }
-.card2 img:hover{
+/* .card2 img:hover{
   transform: scale(1.05); 
   transition: transform 0.3s ease-in-out;
-}
+} */
 .heading {
   width: 100%;
   font-size: clamp(14px, 1.4vw, 19px);
@@ -62,5 +62,11 @@
 }
 .btn1:hover{
   transform: rotate(-20deg);
+}
+@media screen and (max-width : 500px) {
+  .card2{
+    width: 250px;
+    height: 380px;
+  }
 }
 
