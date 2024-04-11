@@ -290,12 +290,14 @@
   background-size: contain;
   margin-bottom: 30px;
   background-position: left;
+  cursor: pointer;
 }
 .appleGoogle{
   width: 100%;
   height: 50px;
   display: flex;
   padding-left: 30px;
+  cursor: pointer;
 }
 .appleStore{
   background-image: url(/public/assets/appStore.png);

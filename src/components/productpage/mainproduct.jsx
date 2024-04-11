@@ -9,21 +9,18 @@ export function Mainproduct() {
   const [loading, setLoading] = useState(true);
     const [product, setData] = useState();
     useEffect(() => {
-      // Simulate asynchronous behavior with setTimeout
       const fetchData = () => {
         setTimeout(() => {
           setData(jsonData);
           setLoading(false);
-        }, 1000); // Delay of 1 second to simulate fetching data
+        }, 1000); 
       };
   
-      fetchData(); // Call the fetchData function
+      fetchData(); 
   
-      // Cleanup function (not necessary in this case)
       return () => {
-        // Any cleanup code here (if needed)
       };
-    }, []); // Empty dependency array to run the effect only once
+    }, []); 
   
     if (loading) {
       return <div  className="spinner"></div>;

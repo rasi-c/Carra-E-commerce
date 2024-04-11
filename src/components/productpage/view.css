@@ -59,18 +59,9 @@
   cursor: pointer;
 }
 .rotatContainer img {
-  width: 80%;
-  height: 80%;
+  width: 75%;
+  height: 95%;
 }
-/* .photos3 {
-  transform: rotate(90deg);
-}
-.photos4 {
-  transform: rotate(180deg);
-}
-.photos5 {
-  transform: rotate(270deg);
-} */
 .leftSide {
   width: 50%;
   display: flex;
@@ -125,7 +116,7 @@
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-style: normal;
-  font-size: 0.7rem;
+  font-size: 1rem;
   margin-bottom: 50px;
   width: 70%;
 }
@@ -275,7 +266,7 @@
   }
   .justText {
     text-align: center;
-    letter-spacing: 0.3px;
+    letter-spacing: 1px;
     line-height: 20px;
   }
   .shadow {
@@ -305,4 +296,8 @@
     justify-content: flex-end;
     font-size: 0.8rem;
   }
+  .rotatContainer img {
+    width: 90%;
+    height: 80%;
+}
 }

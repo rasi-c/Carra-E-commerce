@@ -14,7 +14,7 @@ export function Card(props) {
   const ogText = props.item.description;
   const Trnct = ogText;
   const price = props.item.price;
-  const Image = props.item.images[0];
+  const Image = props.item?.images[0];
   const Id = props.item.id;
   let isAvailable = false;
   let quantity = 1;
