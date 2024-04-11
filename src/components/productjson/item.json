@@ -9,7 +9,7 @@
       ],
       "description": "This is a description of Product A.",
       "rating": 4.5,
-      "company_name": "Company X",
+      "company_name": "ARROW",
       "price": 390
     },
     {
@@ -22,7 +22,7 @@
         ],
         "description": "This is a description of Product A.",
         "rating": 4.5,
-        "company_name": "Company X",
+        "company_name": "ALLLENSOLLY",
         "price": 490
       },
       {
@@ -35,7 +35,7 @@
         ],
         "description": "This is a description of Product A.",
         "rating": 4.5,
-        "company_name": "Company X",
+        "company_name": "TOMMY HILFIGER",
         "price": 490
       },
       {
@@ -48,7 +48,7 @@
         ],
         "description": "This is a description of Product A.",
         "rating": 4.5,
-        "company_name": "Company X",
+        "company_name": "ALLLENSOLLY",
         "price": 590
       },
       {
@@ -61,7 +61,7 @@
         ],
         "description": "This is a description of Product A.",
         "rating": 4.5,
-        "company_name": "Company X",
+        "company_name": "RAYMOND",
         "price": 990
       },
       {
@@ -74,7 +74,7 @@
         ],
         "description": "This is a description of Product A.",
         "rating": 4.5,
-        "company_name": "Company X",
+        "company_name": "LOISE PHILIPPE",
         "price": 790
       },
       {
@@ -87,7 +87,7 @@
         ],
         "description": "This is a description of Product A.",
         "rating": 4.5,
-        "company_name": "Company X",
+        "company_name": "ARROW",
         "price": 490
       },
       {
@@ -100,7 +100,7 @@
         ],
         "description": "This is a description of Product A.",
         "rating": 4.5,
-        "company_name": "Company X",
+        "company_name": "BLACK BERRYS",
         "price": 490
       },
       {
@@ -113,7 +113,7 @@
         ],
         "description": "This is a description of Product A.",
         "rating": 4.5,
-        "company_name": "Company X",
+        "company_name": "PETER ENGLAND",
         "price": 990
       },
       {
@@ -126,7 +126,7 @@
         ],
         "description": "This is a description of Product A.",
         "rating": 4.5,
-        "company_name": "Company X",
+        "company_name": "PETER ENGLAND",
         "price": 890
       },
       {
@@ -139,7 +139,7 @@
         ],
         "description": "This is a description of Product A.",
         "rating": 4.5,
-        "company_name": "Company X",
+        "company_name": "LOISE PHILIPPE",
         "price": 1290
       },
       {
@@ -152,7 +152,7 @@
         ],
         "description": "This is a description of Product A.",
         "rating": 4.5,
-        "company_name": "Company X",
+        "company_name": "RAYMOND",
         "price": 1290
       },
       {
@@ -165,7 +165,7 @@
         ],
         "description": "This is a description of Product A.",
         "rating": 4.5,
-        "company_name": "Company X",
+        "company_name": "BLACK BERRYS",
         "price": 290
       } 
   ]

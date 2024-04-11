@@ -22,7 +22,7 @@
   border-radius: 15px;
 }
 .card2 img:hover{
-  transform: scale(1.1); 
+  transform: scale(1.05); 
   transition: transform 0.3s ease-in-out;
 }
 .heading {

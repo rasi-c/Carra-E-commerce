@@ -47,10 +47,10 @@
     width: 100%;
   }
   .carousel-inner{
-    background-image: url(https://cdn.shopify.com/s/files/1/0070/7032/files/how_20to_20start_20a_20clothing_20brand.png?v=1693935729);
+    /* background-image: url(https://cdn.shopify.com/s/files/1/0070/7032/files/how_20to_20start_20a_20clothing_20brand.png?v=1693935729);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
     width: 100%;
     height: 300px;
     color: white;
@@ -86,5 +86,8 @@
     }
     .carousel-inner{
       height: 150px;
+    }
+    .carasoulContainer h6{
+      font-size: 1rem !important;
     }
   }
