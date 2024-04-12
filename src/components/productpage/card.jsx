@@ -1,8 +1,8 @@
 import React, { useContext, useEffect, useState} from "react";
 import { useDispatch } from "react-redux";
+import { decrement, increment } from "../redux/reduxCart";
 import { Link } from "react-router-dom";
 import { MyContext } from "../../App";
-import { decrement, increment } from "../redux/reduxCart";
 import "./card.css";
 
 export function Card(props) {

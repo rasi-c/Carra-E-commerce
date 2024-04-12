@@ -96,6 +96,10 @@
   cursor: pointer;
   color: white;
 }
+.buynowBtn:hover,
+.addAdress:hover {
+ background-color: #04837e;
+}
 .cartCount{
   color: black;
   font-family: "Poppins", sans-serif;

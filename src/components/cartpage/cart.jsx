@@ -1,9 +1,13 @@
 import React, { useContext, useState } from "react";
 import { MyContext } from "../../App";
+import { useDispatch } from "react-redux";
+import { decrement} from "../redux/reduxCart";
 import "./cart.css";
+import { Link } from "react-router-dom";
 
 export function Cart(props) {
   const myNewArray = useContext(MyContext);
+  const dispatch = useDispatch()
   const [quantity, setQuantity] = useState(props.item.quantity);
   const currentId = props.item.newId;
   const paragraph = props.item.newDetails;
@@ -14,6 +18,7 @@ export function Cart(props) {
   props.setkey(totalAmount)
   function dataDelete(data) {
     console.log("mynewarray cart is : ", myNewArray.cart);
+    dispatch(decrement())
     const newcart = myNewArray.cart.filter((item) => {
       return data !== item.newId;
     });
@@ -32,7 +37,7 @@ export function Cart(props) {
 
   return (
     <div className="card2Sec">
-      <svg
+       <Link to={`/view/${currentId}`}><svg
         className="glasses1"
         version="1.1"
         id="Layer_1"
@@ -53,7 +58,7 @@ export function Cart(props) {
           y="0"
           href={props.item.newImage}
         ></image>
-      </svg>
+      </svg></Link>
       <div className="headDetails">
         <div className="headingSec">{props.item.newTitle}</div>
         <div className="details4">{truncatedParagraph}</div>
