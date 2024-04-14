@@ -25,7 +25,7 @@ export function Invoice() {
           format: [contentWidth, contentHeight],
         });
         pdf.addImage(imgData, 'PNG', 0, 0, contentWidth, contentHeight);
-        pdf.save('content.pdf');
+        pdf.save('invoice.pdf');
       })
       .catch((error) => {
         console.error('Error generating PDF:', error);
@@ -47,7 +47,7 @@ export function Invoice() {
           </div>
         )}
       </div>
-      {addressArray.length > 0 && <button type="submit" onClick={downloadPDF}>Download Bill</button>}    
+      {addressArray.length > 0 && <button type="submit" className="btn btn-primary" onClick={downloadPDF}>Download Bill</button>}    
     </>
   );  
   
