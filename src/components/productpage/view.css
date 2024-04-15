@@ -275,7 +275,7 @@
   .rotatContainer {
     width: 90%;
     margin-top: 10px;
-    transition: 10s linear;
+    /* transition: 10s linear; */
   }
   .rightImg,
   .leftImg,
