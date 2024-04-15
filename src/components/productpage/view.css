@@ -57,9 +57,10 @@
   justify-content: space-around;
   margin-top: 30px;
   cursor: pointer;
+  height: 65px;
 }
 .rotatContainer img {
-  width: 75%;
+  width: 100%;
   height: 95%;
 }
 .leftSide {
@@ -275,7 +276,6 @@
   .rotatContainer {
     width: 90%;
     margin-top: 10px;
-    /* transition: 10s linear; */
   }
   .rightImg,
   .leftImg,
